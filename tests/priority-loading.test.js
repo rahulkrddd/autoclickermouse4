@@ -1,0 +1,4 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const r=f=>fs.readFileSync(f,'utf8');
+test("admin loads orders first then starts sequential background work",()=>{const x=r("public/js/admin.js");assert.match(x,/await ensureAdminTab\('orders'/);assert.match(x,/setTimeout\(loadAdminBackground,0\)/);assert.match(x,/for\(const tab of queue\)/)});
+test('an unready clicked admin tab is foreground prioritized',()=>{const x=r('public/js/admin.js');assert.match(x,/activateAdminTab/);assert.match(x,/ensureAdminTab\(button\.dataset\.tab,\{foreground:true\}\)/);assert.match(x,/adminLoading\.has\(tab\)/)});
+test('professional page overlay is scoped to requested pages',()=>{const j=r('public/js/loading.js'),c=r('public/css/loading.css');for(const p of ['admin','my-orders','review','cart'])assert.match(j,new RegExp(p));assert.match(j,/page-content-loader/);assert.match(c,/page-content-loader-ring/)});

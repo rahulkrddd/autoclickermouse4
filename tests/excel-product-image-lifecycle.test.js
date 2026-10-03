@@ -1,0 +1,7 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+const x=fs.readFileSync('services/adminDataService.js','utf8');
+test('Excel ADD validates one primary and maximum three gallery images',()=>{assert.match(x,/validateProductMedia\(data\)/);assert.match(x,/gallery\.length>3/);assert.match(x,/maximum 1 primary and 3 gallery images/)});
+test('Excel UPDATE compares previous and updated media then cleans removed managed objects',()=>{assert.match(x,/const before=existing/);assert.match(x,/const after=await cfg\.model\.findOne\(filter\)\.lean\(\),removed=removedProductMedia\(before,after\)/);assert.match(x,/storage\.removeMany\(removed\)/)});
+test('Excel UPDATE preserves metadata still referenced after update',()=>{assert.match(x,/const keep=managedKeys\(productMedia\(after\)\)/);assert.match(x,/!keep\.has\(key\)/)});
+test('Excel DELETE cleans product media before deleting database row and aborts on cleanup failure',()=>{const at=x.indexOf("if(action==='DELETE')"),part=x.slice(at,at+900);assert.match(part,/storage\.removeMany\(productMedia\(existing\)\)/);assert.match(part,/if\(cleanup\.failed\.length\)throw Error/);assert.ok(part.indexOf('storage.removeMany')<part.indexOf('deleteOne(filter)'))});
+test('Excel import reports image deletion and cleanup failure counts',()=>{assert.match(x,/imagesDeleted:0,imageCleanupFailed:0/);assert.match(x,/result\.imagesDeleted\+=cleanup\.deleted\.length/)});

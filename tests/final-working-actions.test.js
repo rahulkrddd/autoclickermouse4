@@ -1,0 +1,6 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const r=f=>fs.readFileSync(f,'utf8');
+test('wrong reset password remains a normal validation error',()=>assert.match(r('app.js'),/status\(400\)\.json\(\{message:'Admin password is incorrect'/));
+test('bulk upload button directly opens hidden file chooser',()=>{const x=r('public/js/admin.js');assert.match(x,/workingImport'\)\.onclick=\(\)=>\$\('#workingExcelFile'\)\.click/);assert.doesNotMatch(x,/Choose Excel/)});
+test('backup and import expose loading state',()=>{const x=r('public/js/admin.js');assert.match(x,/Preparing Excel backup/);assert.match(x,/Uploading \$\{file\.name\}/);assert.match(x,/smart-action-loading/)});
+test('COD checkout commits stock immediately once',()=>{const x=r('app.js');assert.match(x,/checkout:\$\{o\._id\}:\$\{x\.p\._id\}/);assert.match(x,/o\.inventoryCommittedAt=new Date/)});
+test('online payment finalizer remains transactional inventory commit',()=>{const x=r('app.js');assert.match(x,/async function finalize/);assert.match(x,/for\(const x of latest\)await inventory\.decrement/);assert.match(x,/inventoryCommittedAt:now/)});

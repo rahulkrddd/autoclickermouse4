@@ -1,0 +1,6 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const r=f=>fs.readFileSync(f,'utf8');
+test('invoice table divider is separated from first item baseline',()=>{const x=r('services/invoiceService.js');assert.match(x,/y:y-8/);assert.match(x,/y-=24/);assert.doesNotMatch(x,/y-=13;page\.drawLine/)});
+test('overview is professional, collapsible and session persisted',()=>{const h=r('public/admin.html'),j=r('public/js/admin.js'),c=r('public/css/admin-page.css');assert.match(h,/adminOverview/);assert.match(h,/overviewToggle/);assert.match(j,/adminOverviewCollapsed/);assert.match(c,/admin-overview\.is-collapsed/)});
+test('overview cards open correct admin contexts',()=>{const x=r('public/js/admin.js');assert.match(x,/activateStatsFilter/);assert.match(x,/Pending orders/);assert.match(x,/activateAdminTab\(productsButton\)/)});
+test('pending backend filter means all open fulfillment statuses',()=>{assert.match(r('app.js'),/status==='Pending'.*\$nin:\['Delivered','Rejected','Returned'\]/)});
+test('activity becomes mobile cards with labeled cells',()=>{const j=r('public/js/admin.js'),c=r('public/css/admin-page.css');assert.match(j,/data-label=\"Product \/ Order\"/);assert.match(c,/#leads tbody tr/);assert.match(c,/activity-actions/)});

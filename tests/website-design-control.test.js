@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+const read=f=>fs.readFileSync(f,'utf8');
+test('one memorable design file exists and exposes text and design controls',()=>{const x=read('public/WEBSITE_DESIGN.js');assert.match(x,/const TEXT =/);assert.match(x,/const DESIGN =/);assert.match(x,/ADVANCED MULTI-PRODUCT STORE/);assert.match(x,/Click smarter\./);assert.match(x,/Premium accessories/);assert.match(x,/--nav:/)});
+test('all public pages load the design control file',()=>{for(const f of ['index','product','cart','orders','review','faq','policies','admin'])assert.match(read(`public/${f}.html`),/defer src="\/WEBSITE_DESIGN\.js\?v=1"/)});
+test('design control does not call APIs or alter business storage',()=>{const x=read('public/WEBSITE_DESIGN.js');assert.doesNotMatch(x,/fetch\(|XMLHttpRequest|localStorage\.setItem|sessionStorage\.setItem|\/admin\/|\/api\//)});

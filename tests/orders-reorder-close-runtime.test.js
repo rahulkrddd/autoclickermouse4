@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+const checkout=fs.readFileSync('public/js/checkout.js','utf8'),orders=fs.readFileSync('public/orders.html','utf8');
+test('orders page intentionally has no common.js and checkout does not require track to close',()=>{assert.doesNotMatch(orders,/\/js\/common\.js/);assert.match(checkout,/if\(typeof window\.track==='function'\)window\.track\('checkout_abandoned'/)});
+test('close removes modal before optional abandonment analytics',()=>{const at=checkout.indexOf('const closeCheckout=');const part=checkout.slice(at,at+260);assert.ok(part.indexOf('modal.remove()')>=0);assert.ok(part.indexOf('modal.remove()')<part.indexOf('recordAbandonment()'))});
+test('close handler is attached to final checkout X only',()=>{assert.match(checkout,/const checkoutClose=document\.querySelector\('#directCheckoutModal \.close'\)/);assert.match(checkout,/if\(checkoutClose\)checkoutClose\.onclick/);assert.doesNotMatch(checkout,/data-checkout-close|>Close<\/button>/)});

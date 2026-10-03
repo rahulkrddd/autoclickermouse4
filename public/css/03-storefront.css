@@ -1,0 +1,131 @@
+body:has(#rows) .cartrow h3{margin:0 0 9px;font-size:1.1rem;color:#111827}
+body:has(#rows) .cartrow p{margin:0 0 12px;font-size:1.08rem;font-weight:900}
+body:has(#rows) .cartrow select{min-width:78px;height:40px;padding:0 12px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;font-weight:800}
+body:has(#rows) .cartrow>button{align-self:center;min-width:106px;border:1px solid #fecaca;background:#fff5f5;color:#b91c1c;box-shadow:none}
+body:has(#rows) .cartrow>button:hover{background:#b91c1c;color:#fff}
+body:has(#rows) main.shell>.order{margin:22px 0 0;padding:25px 28px;border:1px solid #e5e7eb;border-radius:22px;background:#fff;box-shadow:0 14px 38px #0f172a14}
+body:has(#rows) main.shell>.order h2:first-child{margin:0 0 20px;padding-bottom:15px;border-bottom:1px solid #eef2f7}
+body:has(#rows) main.shell>.order>p{display:flex;justify-content:space-between;gap:20px;max-width:520px;color:#475569}
+body:has(#rows) main.shell>.order>.toolbar{display:grid;grid-template-columns:minmax(0,360px) auto;justify-content:start;gap:10px;margin:20px 0 8px}
+body:has(#rows) #coupon{height:48px;padding:0 15px;border:1px solid #cbd5e1;border-radius:12px;outline:none}
+body:has(#rows) #coupon:focus{border-color:#ff9900;box-shadow:0 0 0 4px #ff990024}
+body:has(#rows) #apply{height:48px;background:#fff7e6;border-color:#ffb340;color:#6b3a00}
+body:has(#rows) #couponMsg:empty{display:none}
+body:has(#rows) main.shell>.order>h2:not(:first-child){max-width:520px;margin:20px 0 16px;padding-top:18px;border-top:1px dashed #cbd5e1}
+body:has(#rows) #checkout{min-height:52px;padding:0 25px;border-radius:13px;background:linear-gradient(135deg,#ffd814,#ffbd10);box-shadow:0 9px 22px #ff990038}
+
+/* ADMIN */
+body:has(#stats){background:linear-gradient(180deg,#f8fafc,#eef2f7)}
+body:has(#stats) main.shell{width:min(1440px,100%);padding-top:26px}
+body:has(#stats) #stats{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+body:has(#stats) .stat{position:relative;overflow:hidden;min-height:112px;padding:19px;border:1px solid #e5e7eb;border-radius:17px;background:#fff;box-shadow:0 8px 24px #0f172a0f;transition:.2s}
+body:has(#stats) .stat::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(#ff9900,#ffd814)}
+body:has(#stats) .stat:hover{transform:translateY(-3px);box-shadow:0 15px 35px #0f172a18}
+body:has(#stats) .stat b{font-size:1.75rem;color:#111827}
+body:has(#stats) .tabs{position:sticky;top:72px;z-index:15;margin:22px 0 17px;padding:9px;border:1px solid #e5e7eb;border-radius:16px;background:#ffffffed;box-shadow:0 8px 24px #0f172a0d;backdrop-filter:blur(10px)}
+body:has(#stats) .tabs .pill{border:0;background:transparent;color:#475569}
+body:has(#stats) .tabs .pill.primary{background:#232f3e;color:#fff;box-shadow:0 5px 14px #0f172a26}
+body:has(#stats) .tabpane{padding:20px;border:1px solid #e5e7eb;border-radius:19px;background:#fff;box-shadow:0 10px 32px #0f172a10}
+body:has(#stats) .tabpane>.toolbar{display:grid;grid-template-columns:minmax(240px,1fr) minmax(190px,280px);gap:12px;margin:0 0 18px}
+body:has(#stats) .tabpane>.toolbar input,body:has(#stats) .tabpane>.toolbar select{height:46px;border-radius:11px}
+body:has(#stats) .tablewrap{border:1px solid #e5e7eb;border-radius:14px;box-shadow:none}
+body:has(#stats) th{position:sticky;top:0;padding:14px 12px;background:#232f3e;font-size:.78rem;letter-spacing:.03em;text-transform:uppercase}
+body:has(#stats) td{padding:14px 12px;color:#334155}
+body:has(#stats) tbody tr:nth-child(even){background:#f8fafc}
+body:has(#stats) tbody tr:hover{background:#fff8e8}
+body:has(#stats) #productList{margin-top:18px}
+body:has(#stats) #productList .card{border-radius:16px;box-shadow:0 8px 24px #0f172a10}
+body:has(#stats) #couponForm{margin:0 0 16px;border:1px solid #e5e7eb;box-shadow:none}
+body:has(#stats) #couponForm .toolbar{display:grid;grid-template-columns:1.2fr .8fr .8fr 1fr 1fr auto;gap:10px}
+body:has(#stats) #couponForm input,body:has(#stats) #couponForm select{width:100%;min-width:0;height:45px}
+body:has(#stats) #leads .notice{margin-top:0;border-radius:12px}
+
+/* REVIEWS */
+body:has(#reviews){background:linear-gradient(180deg,#f8fafc,#eef2f7)}
+body:has(#reviews) main.shell{width:min(1200px,100%);padding-top:34px}
+body:has(#reviews) main.shell>h1{margin:0 0 25px;font-size:clamp(1.8rem,4vw,2.7rem)}
+body:has(#reviews) main.shell>h1::after{content:"";display:block;width:68px;height:5px;margin-top:10px;border-radius:999px;background:linear-gradient(90deg,#ff9900,#ffd814)}
+body:has(#reviews) #reviews{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+body:has(#reviews) #reviews .review{position:relative;padding:23px;border:1px solid #e5e7eb;border-radius:20px;background:#fff;box-shadow:0 10px 30px #0f172a10}
+body:has(#reviews) #reviews .review::before{content:"Verified purchase";display:inline-flex;margin-bottom:14px;padding:6px 10px;border-radius:999px;background:#ecfdf5;color:#067d62;font-size:.7rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+body:has(#reviews) #reviews .review h2{margin:0 0 5px;font-size:1.08rem;color:#111827}
+body:has(#reviews) #reviews .review>.muted{margin:0 0 16px;font-size:.82rem}
+body:has(#reviews) #reviews .ratingline{grid-template-columns:90px minmax(0,1fr);gap:8px;margin:9px 0;font-size:.86rem}
+body:has(#reviews) #reviews .stars{font-size:18px;letter-spacing:0}
+body:has(#reviews) #reviews .review>p:not(.muted){margin:17px 0;line-height:1.6;color:#334155}
+body:has(#reviews) #reviews details{padding-top:13px;border-top:1px solid #eef2f7}
+body:has(#reviews) #reviews summary{color:#007185;cursor:pointer}
+body:has(#reviews) main.shell>.toolbar{display:flex;justify-content:center;align-items:center;gap:14px;margin:24px auto 0;padding:12px;width:max-content;max-width:100%;border:1px solid #e5e7eb;border-radius:999px;background:#fff;box-shadow:0 8px 24px #0f172a0f}
+body:has(#reviews) main.shell>.toolbar .pill{min-width:105px}
+body:has(#reviews) main.shell>.toolbar .pill:disabled{opacity:.45;cursor:not-allowed}
+body:has(#reviews) #page{white-space:nowrap;color:#475569}
+
+@media(max-width:1000px){
+ body:has(#stats) #stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ body:has(#stats) #couponForm .toolbar{grid-template-columns:repeat(3,minmax(0,1fr))}
+ body:has(#reviews) #reviews{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ body:has(#rows) main.shell,body:has(#stats) main.shell,body:has(#reviews) main.shell{padding:18px 9px 28px}
+ body:has(#rows) .cartrow{grid-template-columns:82px minmax(0,1fr) 40px;grid-template-rows:auto auto;gap:9px 11px;min-height:0;padding:13px;border-radius:16px}
+ body:has(#rows) .cartrow>a{grid-row:1/3;width:82px;height:88px}
+ body:has(#rows) .cartrow img{width:74px;height:74px}
+ body:has(#rows) .cartrow h3{font-size:.9rem}
+ body:has(#rows) .cartrow>button{grid-column:3;grid-row:1/3;width:40px;min-width:40px;height:40px;padding:0;border-radius:50%;font-size:0}
+ body:has(#rows) .cartrow>button::before{content:"×";font-size:24px}
+ body:has(#rows) main.shell>.order{padding:18px 15px;border-radius:17px}
+ body:has(#rows) main.shell>.order>.toolbar{grid-template-columns:minmax(0,1fr) auto;width:100%}
+ body:has(#rows) #checkout{width:100%}
+ body:has(#stats) #stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ body:has(#stats) .stat{min-height:91px;padding:14px;font-size:.8rem}
+ body:has(#stats) .stat b{font-size:1.35rem}
+ body:has(#stats) .tabs{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:8px;margin:14px 0}
+ body:has(#stats) .tabs .pill{width:100%;padding:10px 5px}
+ body:has(#stats) .tabpane{padding:12px;border-radius:15px}
+ body:has(#stats) .tabpane>.toolbar{grid-template-columns:1fr;margin-bottom:12px}
+ body:has(#stats) .tablewrap{border-radius:11px}
+ body:has(#stats) table{min-width:720px}
+ body:has(#stats) th,body:has(#stats) td{padding:11px 9px;font-size:.78rem}
+ body:has(#stats) #couponForm .toolbar{grid-template-columns:1fr}
+ body:has(#stats) #couponForm .toolbar .pill{width:100%}
+ body:has(#reviews) #reviews{grid-template-columns:1fr!important;gap:12px}
+ body:has(#reviews) #reviews .review{padding:18px;border-radius:17px}
+ body:has(#reviews) main.shell>.toolbar{display:grid;grid-template-columns:1fr auto 1fr;width:100%;border-radius:16px;gap:7px;padding:9px}
+ body:has(#reviews) main.shell>.toolbar .pill{min-width:0;width:100%;padding:10px 7px}
+}
+@media(max-width:380px){
+ body:has(#stats) #stats{grid-template-columns:1fr 1fr}
+ body:has(#reviews) main.shell>.toolbar{grid-template-columns:1fr 1fr}
+ body:has(#reviews) #page{grid-column:1/3;grid-row:1;text-align:center}
+}
+
+/* ADMIN COUPONS AND CUSTOMER ACTIVITY MANAGEMENT */
+body:has(#stats) #coupons h2{margin:0 0 16px;color:#111827}
+body:has(#stats) .admin-card-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:16px}
+body:has(#stats) .admin-list-card{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px;border:1px solid #e2e8f0;border-radius:16px;background:linear-gradient(145deg,#fff,#f8fafc);box-shadow:0 7px 20px #0f172a0d}
+body:has(#stats) .admin-list-card h3{margin:4px 0 11px;font-size:1.24rem;letter-spacing:.04em}
+body:has(#stats) .admin-label{font-size:.68rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#64748b}
+body:has(#stats) .admin-meta{display:flex;flex-wrap:wrap;gap:7px}
+body:has(#stats) .admin-meta span{padding:6px 9px;border-radius:999px;background:#eef2f7;color:#475569;font-size:.74rem;font-weight:800}
+body:has(#stats) .admin-meta .state-on{background:#dcfce7;color:#166534}
+body:has(#stats) .admin-meta .state-off{background:#fee2e2;color:#991b1b}
+body:has(#stats) .admin-delete{flex:0 0 auto}
+body:has(#stats) .admin-section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+body:has(#stats) .admin-section-head h2{margin:0 0 4px}
+body:has(#stats) .admin-section-head p{margin:0;color:#64748b;font-size:.85rem}
+body:has(#stats) .table-delete{border:1px solid #fecaca;border-radius:9px;padding:7px 10px;background:#fff5f5;color:#b91c1c;font-weight:800;cursor:pointer}
+body:has(#stats) .table-delete:hover{background:#b91c1c;color:#fff}
+body:has(#stats) #eventsBody input,#selectAllEvents{width:17px;height:17px;accent-color:#ff9900;cursor:pointer}
+body:has(#stats) .admin-empty{padding:24px!important;text-align:center;color:#64748b}
+body:has(#stats) #deleteSelectedEvents:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:900px){body:has(#stats) .admin-card-list{grid-template-columns:1fr}}
+@media(max-width:700px){body:has(#stats) .admin-list-card{align-items:flex-start;padding:14px}body:has(#stats) .admin-section-head{align-items:flex-start;flex-direction:column}body:has(#stats) #deleteSelectedEvents{width:100%}body:has(#stats) #leads table{min-width:900px}}
+
+.product-card h3{
+    margin:12px 0 3px !important;
+    min-height:2em !important;
+}
+
+.product-card .card-description{
+    margin-top:0 !important;
+}.ordered-products{display:grid;gap:8px;margin:15px 0}.ordered-product{display:flex;justify-content:space-between;gap:12px;width:100%;padding:12px;border:1px solid #e2e8f0;border-radius:12px;background:#fff;text-align:left;cursor:pointer}.ordered-product small{display:block;color:#64748b;margin-top:4px}.order-totals{margin:14px 0 14px auto;max-width:390px}.order-totals p{display:flex;justify-content:space-between;margin:7px 0}.order-totals .grand{padding-top:9px;border-top:1px solid #cbd5e1;font-size:1.08rem}.admin-panel{width:min(920px,100%)}.form-grid,.admin-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.check-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0}.check-grid label{padding:10px;border:1px solid #e2e8f0;border-radius:10px}.row-actions{display:flex;gap:5px;flex-wrap:wrap}

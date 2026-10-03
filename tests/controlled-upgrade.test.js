@@ -1,0 +1,11 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),settings=require('../services/settingsService');const r=f=>fs.readFileSync(f,'utf8');
+test('settings types',()=>{assert.equal(settings.normalize('storeOpen',true),true);assert.equal(settings.normalize('shippingCharge','5'),5)});
+test('orders server pagination',()=>{const x=r('app.js');for(const p of ['countDocuments(filter)','.skip(','.limit(','totalRecords','totalPages'])assert.match(x,new RegExp(p.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))) });
+test('page sizes',()=>assert.match(r('public/admin.html'),/<option>10<\/option>.*20.*50.*100/s));
+test('product search actions retained',()=>{const x=r('public/js/admin.js');assert.match(x,/productSearch/);assert.match(x,/productForm/);assert.match(x,/stockForm/);assert.match(x,/mediaForm/)});
+test('pickup badges active inactive',()=>{const x=r('public/js/admin.js');assert.match(x,/pickup-state/);assert.match(x,/ACTIVE/);assert.match(x,/INACTIVE/)});
+test('public pickups active only',()=>assert.match(r('routes/upgradeRoutes.js'),/Pickup\.find\(\{active:true\}\)/));
+test('inventory deletes authenticated and audited',()=>{const x=r('routes/upgradeRoutes.js');assert.match(x,/inventory-logs\/:id',auth/);assert.match(x,/module:'inventory_logs'/)});
+test('store gate protects creation',()=>{const x=r('app.js');assert.match(x,/createOrder\/cod',limit\(60000,10\),storePolicy\.requireOpen/);assert.match(x,/createOrder',limit\(60000,15\),storePolicy\.requireOpen/)});
+test('invoice gate exists',()=>assert.match(r('routes/upgradeRoutes.js'),/INVOICE_DISABLED/));
+test('dirty state form snapshots',()=>assert.match(r('public/js/admin.js'),/WeakMap/));

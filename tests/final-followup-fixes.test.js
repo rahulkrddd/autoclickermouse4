@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const r=f=>fs.readFileSync(f,'utf8');
+test('product delete is permanent and audited',()=>{const x=r('app.js');assert.match(x,/findOneAndDelete\(\{legacyId:q\.params\.id\}\)/);assert.match(x,/action:'delete',module:'products'/);assert.doesNotMatch(x,/app\.delete\('\/admin\/products\/:id'.*active:false/)});
+test('settings save shows success and error toast',()=>{const x=r('public/js/admin.js');assert.match(x,/Settings saved successfully/);assert.match(x,/Unable to save settings/)});
+test('mobile bulk delete controls remain visible',()=>{const x=r('public/css/admin-page.css');assert.match(x,/#inventory #deleteSelectedInventory,#leads #deleteSelectedEvents/);assert.match(x,/display:inline-flex!important/)});
+test('mobile product overview card does not span full row',()=>assert.match(r('public/css/admin-page.css'),/overview-stat\[data-stat-kind="products"\]\{grid-column:auto!important\}/));

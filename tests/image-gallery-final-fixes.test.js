@@ -1,0 +1,8 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+const read=f=>fs.readFileSync(f,'utf8');
+test('gallery selections append using DataTransfer instead of replacing prior files',()=>{const x=read('public/js/admin.js');assert.match(x,/acmGalleryQueues=new WeakMap/);assert.match(x,/new DataTransfer\(\)/);assert.match(x,/map\.set\(acmFileKey\(file\),file\)/)});
+test('edit queue accounts for existing gallery count and enforces maximum three gallery images',()=>{const x=read('public/js/admin.js');assert.match(x,/3-existingGallery/);assert.match(x,/1\+gallery\.length\+fs\.length>4/)});
+test('image manager gallery form is independent from primary form',()=>{const x=read('public/js/admin.js');assert.match(x,/id="primaryUpload"/);assert.match(x,/id="galleryUpload"/);assert.match(x,/Gallery images remain unchanged/)});
+test('existing gallery cards expose delete and alt actions',()=>{const x=read('public/js/admin.js');assert.match(x,/remove-existing-gallery/);assert.match(x,/save-image-alt/);assert.match(x,/method:'DELETE'/)});
+test('server gallery route enforces four total images and deletes only after DB update',()=>{const x=read('routes/upgradeRoutes.js');assert.match(x,/current\+\(q\.files\|\|\[\]\)\.length>4/);const save=x.indexOf('img.deleteOne();await p.save()'),remove=x.indexOf('await storage.remove(old)',save);assert.ok(save>0&&remove>save)});
+test('responsive manager UI and image count are present',()=>{assert.match(read('public/css/admin-page.css'),/image-manager-forms/);assert.match(read('public/js/admin.js'),/\/ 4 images/)});

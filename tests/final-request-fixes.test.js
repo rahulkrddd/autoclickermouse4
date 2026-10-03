@@ -1,0 +1,6 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const r=f=>fs.readFileSync(f,'utf8');
+test('invoice download uses blob without page navigation',()=>{const x=r('public/js/admin.js');assert.match(x,/await fetch\('\/admin\/orders\/'/);assert.match(x,/URL\.createObjectURL/);assert.doesNotMatch(x,/downloadInvoice=id=>location\.href/)});
+test('inactive filters render from article data immediately',()=>{const x=r('public/js/admin.js');assert.match(x,/data-active/);assert.match(x,/card\.hidden=!showInactive/)});
+test('activity keeps only abandoned and payment failed with details',()=>{assert.doesNotMatch(r('public/admin.html'),/checkout_validated|checkout_started/);assert.match(r('public/js/admin.js'),/activityDetails/);assert.match(r('app.js'),/allowed=\['checkout_abandoned','payment_failed'\]/)});
+test('checkout abandons only with valid identity and carries products',()=>{const x=r('public/js/checkout.js');assert.match(x,/recordAbandonment/);assert.match(x,/valid\('name',name\).*valid\('mobile',mobile\)/);assert.match(x,/productNames/);assert.doesNotMatch(x,/track\('checkout_validated'/)});
+test('dashboard stat cards are keyboard-clickable filters',()=>{const x=r('public/js/admin.js');assert.match(x,/bindStatsCards/);assert.match(x,/activateStatsFilter/);assert.match(x,/setAttribute\('role','button'\)/)});

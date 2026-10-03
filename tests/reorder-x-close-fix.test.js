@@ -1,0 +1,4 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const x=fs.readFileSync('public/js/checkout.js','utf8');
+test('only X close control remains',()=>{assert.match(x,/class="close" type="button">×<\/button>/);assert.doesNotMatch(x,/data-checkout-close|checkout-inline-close|>Close<\/button>/)});
+test('final X has a direct close handler',()=>{assert.match(x,/const checkoutClose=document\.querySelector\('#directCheckoutModal \.close'\)/);assert.match(x,/checkoutClose\.onclick=e=>/);assert.match(x,/closeCheckout\(\)/)});
+test('reorder still enters the shared checkout function',()=>{const o=fs.readFileSync('public/js/orders.js','utf8');assert.match(o,/doReorder\(o\).*openDirectCheckout/s);assert.match(x,/window\.openDirectCheckout=async function/)});

@@ -1,0 +1,7 @@
+const Setting=require('../models/Setting');
+const defaults={storeOpen:true,supportMobile:'',supportEmail:'',sellerLegalName:'',sellerTradeName:'AutoClickerMouse',sellerAddress:'',sellerCity:'',sellerDistrict:'',sellerState:'',sellerStateCode:'',sellerPincode:'',sellerCountry:'India',sellerGSTIN:'',sellerPAN:'',defaultCurrency:'INR',defaultMaxOrderQty:null,activityRetentionDays:0,selfPickupEnabled:false,codEnabled:false,maintenanceMessage:'',shippingCharge:0,freeShippingThreshold:null,invoiceEnabled:true,invoicePrefix:'INV',invoiceTerms:'Thank you for your purchase.'};
+const booleans=new Set(['storeOpen','selfPickupEnabled','codEnabled','invoiceEnabled']),numbers=new Set(['defaultMaxOrderQty','activityRetentionDays','shippingCharge','freeShippingThreshold']);
+function normalize(k,v){if(booleans.has(k))return v===true;if(numbers.has(k)){if(v===''||v==null)return null;const n=Number(v);if(!Number.isFinite(n)||n<0)throw Object.assign(Error(`${k} must be a non-negative number or null`),{status:400});return n}return String(v??'').trim()}
+async function all(session){const rows=await Setting.find().session(session||null).lean();return Object.assign({},defaults,Object.fromEntries(rows.map(x=>[x.key,x.value])))}
+async function update(values,actor){for(const k of Object.keys(defaults))if(Object.hasOwn(values,k))await Setting.updateOne({key:k},{$set:{value:normalize(k,values[k]),updatedBy:actor}},{upsert:true,runValidators:true});return all()}
+module.exports={defaults,all,update,allowed:Object.keys(defaults),normalize};

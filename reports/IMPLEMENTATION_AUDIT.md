@@ -1,0 +1,3 @@
+# Implementation audit
+
+The Repomix source contained 61 files. The audit identified existing compatibility serializers, a shared Razorpay finalizer, MongoDB transactions, inventory logs, Supabase primary-image upload, sessions, admin auth, coupon validation and basic unit tests. Missing or partial areas were invoice generation, confirmation milestone, COD, pickup/settings APIs, manual orders, controlled order editing, reorder eligibility, gallery lifecycle, historical order pricing and customer modals. The upgrade extends those existing components instead of introducing a second data layer. JSON remains migration input only.

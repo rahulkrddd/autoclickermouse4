@@ -1,0 +1,11 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+const storage=require('../services/supabaseStorageService');const read=f=>fs.readFileSync(f,'utf8');
+const image=(type='image/png',size=10)=>({mimetype:type,size,buffer:Buffer.alloc(Math.max(1,Math.min(size,16)))});
+test('JPEG PNG WebP accepted',()=>{for(const t of ['image/jpeg','image/png','image/webp'])assert.doesNotThrow(()=>storage.validateImage(image(t)))});
+test('invalid MIME and over 5 MB rejected',()=>{assert.throws(()=>storage.validateImage(image('text/plain')));assert.throws(()=>storage.validateImage(image('image/png',5*1024*1024+1)))});
+test('local and external media are never managed cleanup objects',()=>{process.env.SUPABASE_STORAGE_BUCKET='product-images';for(const m of [{url:'/images/product.svg',path:'/images/product.svg'},{url:'https://external.test/x.jpg',path:''},{}])assert.equal(storage.isManagedSupabaseImage(m),false)});
+test('managed paths are strict and deduplicated by removeMany implementation',()=>{process.env.SUPABASE_STORAGE_BUCKET='product-images';assert.equal(storage.isManagedSupabaseImage({bucket:'product-images',path:'products/p-1/123e4567-e89b-12d3-a456-426614174000.jpg'}),true);assert.match(read('services/supabaseStorageService.js'),/new Map\(\)/)});
+test('single product UI uses files, previews, remove and loading state',()=>{const x=read('public/js/admin.js');for(const q of ['p_primaryImage','p_galleryImages','selectedMediaPreviews','media-remove','Saving...'])assert.ok(x.includes(q),q)});
+test('product detail has deduplicated gallery and keyboard lightbox',()=>{const x=read('public/js/product.js');assert.match(x,/new Set/);assert.match(x,/ArrowLeft/);assert.match(x,/ArrowRight/);assert.match(x,/Escape/)});
+test('server create requires primary and rolls uploads back',()=>{const x=read('services/productImageLifecycleService.js');assert.match(x,/Primary product image is required/);assert.match(x,/removeMany\(uploaded\)/)});
+test('delete cleanup occurs only after MongoDB deletion',()=>{const x=read('app.js'),db=x.indexOf('findOneAndDelete({legacyId:q.params.id})'),clean=x.indexOf('deleteProductImages(p)',db);assert.ok(db>0&&clean>db)});

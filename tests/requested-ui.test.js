@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const r=f=>fs.readFileSync(f,'utf8');
+test('order and product search are live with inline clear',()=>{const h=r('public/admin.html'),j=r('public/js/admin.js');assert.doesNotMatch(h,/id="orderSearchBtn"/);assert.match(h,/orderInlineClear/);assert.match(j,/debounce\(\(\)=>loadOrdersSmart/);assert.match(j,/limit:8/)});
+test('checkout opens loading shell and hides single choices',()=>{const x=r('public/js/checkout.js');assert.match(x,/Preparing checkout/);assert.match(x,/options.length===1/)});
+test('home badges removed and detail badges added',()=>{assert.doesNotMatch(r('public/js/store.js'),/Pickup available/);assert.match(r('public/js/product.js'),/Pickup available/)});
+test('coupon window enforced by server',()=>assert.match(r('app.js'),/startAt.*expiresAt/));

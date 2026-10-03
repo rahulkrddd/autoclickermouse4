@@ -1,0 +1,8 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const r=f=>fs.readFileSync(f,'utf8');
+test('wishlist buttons are excluded from fetch spinner',()=>assert.match(r('public/js/loading.js'),/matches\('\.heart,#wishlistFilter/));
+test('review and faq use full storefront header',()=>{for(const f of ['review.html','faq.html']){const x=r('public/'+f);assert.match(x,/id="adminBtn"/);assert.match(x,/id="ordersBtn"/);assert.match(x,/id="cartCount"/)}});
+test('admin overview defaults collapsed and tabs hidden',()=>{const h=r('public/admin.html');assert.match(h,/admin-overview is-collapsed/);assert.match(h,/id="adminTabs" hidden/)});
+test('overview includes five requested sections',()=>{const x=r('public/js/admin.js');for(const s of ['Coupons','Pickup','Settings','Inventory','Activity'])assert.match(x,new RegExp("'"+s+"'"))});
+test('coupon and pickup delete are hard deletes',()=>{assert.match(r('app.js'),/Coupon\.findOneAndDelete/);assert.match(r('routes/upgradeRoutes.js'),/Pickup\.findByIdAndDelete/)});
+test('payment dismiss is payment failed and deduplicated',()=>{const x=r('public/js/checkout.js');assert.match(x,/coPaymentDismissTracked/);assert.match(x,/track\('payment_failed'/);assert.match(x,/if\(coCompleted\|\|coPaymentOpened\)return/)});
+test('activity actions stack and pager hides',()=>{assert.match(r('public/css/admin-page.css'),/#leads \.activity-actions\{grid-template-columns:1fr!important/);assert.match(r('public/js/store.js'),/pager\.hidden=totalPages<=1/)});
