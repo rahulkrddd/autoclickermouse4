@@ -1,0 +1,3 @@
+const required=['SITE_ID','SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','SUPABASE_STORAGE_BUCKET','RAZORPAY_WEBHOOK_SECRET','MONGODB_URI','SESSION_SECRET','RAZORPAY_KEY_ID','RAZORPAY_KEY_SECRET','ADMIN_PASSWORD'];
+function validateEnv(){const missing=required.filter(k=>!process.env[k]);if(missing.length)throw new Error('Missing required environment variables: '+missing.join(', '));}
+module.exports={validateEnv};

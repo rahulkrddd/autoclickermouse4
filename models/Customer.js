@@ -1,0 +1,5 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');const schema=new mongoose.Schema({customerCode:String,name:String,mobile:{type:String,required:true,unique:false},email:{type:String,lowercase:true,trim:true},addresses:[{label:String,line1:String,line2:String,city:String,district:String,state:String,country:{type:String,default:'India'},pincode:String,isDefault:Boolean}],status:{type:String,default:'active'},firstOrderAt:Date,lastOrderAt:Date,totalOrders:{type:Number,min:0,default:0},totalSpent:{type:Number,min:0,default:0}},{timestamps:true,collection:'customers'});schema.index({email:1},{unique:false,sparse:true});schema.index({lastOrderAt:-1});schema.index({siteId:1,mobile:1},{unique:true,name:'uq_customers_site_mobile'});
+schema.index({siteId:1,email:1},{unique:true,partialFilterExpression:{email:{$type:'string',$gt:''}},name:'uq_customers_site_email'});
+schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('Customer',schema);

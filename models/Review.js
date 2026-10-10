@@ -1,0 +1,4 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');const schema=new mongoose.Schema({orderId:{type:mongoose.Schema.Types.ObjectId,ref:'Order',required:true},orderItemId:String,customerId:{type:mongoose.Schema.Types.ObjectId,ref:'Customer'},productId:{type:mongoose.Schema.Types.ObjectId,ref:'Product'},shippingRating:{type:Number,min:1,max:5},packagingRating:{type:Number,min:1,max:5},productRating:{type:Number,min:1,max:5},overallRating:{type:Number,min:1,max:5},reviewText:String,verifiedPurchase:{type:Boolean,default:true},status:{type:String,default:'published'}},{timestamps:true,collection:'reviews'});schema.index({productId:1,status:1,createdAt:-1});schema.index({orderId:1,orderItemId:1},{unique:false,sparse:true});schema.index({siteId:1,orderId:1,orderItemId:1},{unique:true,name:'uq_reviews_site_order_item'});
+schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('Review',schema);

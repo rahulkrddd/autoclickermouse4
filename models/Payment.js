@@ -1,0 +1,6 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');const schema=new mongoose.Schema({paymentId:{type:String,sparse:true,unique:false},gatewayOrderId:{type:String,required:true,unique:false},internalOrderId:{type:String,required:true,unique:false},orderId:{type:mongoose.Schema.Types.ObjectId,ref:'Order'},gateway:{type:String,default:'razorpay'},amount:{type:Number,min:0,required:true},currency:{type:String,default:'INR'},status:{type:String,required:true},razorpaySignature:String,failureCode:String,failureReason:String,refundAmount:{type:Number,min:0,default:0},gatewayPayload:mongoose.Schema.Types.Mixed,verifiedAt:Date},{timestamps:true,collection:'payments'});schema.index({status:1,createdAt:1});schema.index({siteId:1,paymentId:1},{unique:true,partialFilterExpression:{paymentId:{$type:'string',$gt:''}},name:'uq_payments_site_payment'});
+schema.index({siteId:1,gatewayOrderId:1},{unique:true,name:'uq_payments_site_gateway'});
+schema.index({siteId:1,internalOrderId:1},{unique:true,name:'uq_payments_site_internal'});
+schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('Payment',schema);
