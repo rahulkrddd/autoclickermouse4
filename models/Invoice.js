@@ -1,0 +1,9 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');
+const line=new mongoose.Schema({productId:mongoose.Schema.Types.ObjectId,legacyProductId:String,name:String,sku:String,productCode:String,hsnCode:String,quantity:Number,unitPrice:Number,discount:Number,taxableValue:Number,taxRate:Number,taxAmount:Number,lineTotal:Number},{_id:false});
+const schema=new mongoose.Schema({invoiceNumber:{type:String,required:true,unique:false},orderId:{type:mongoose.Schema.Types.ObjectId,ref:'Order',required:true,unique:false},publicOrderId:{type:String,required:true,index:true},invoiceDate:{type:Date,required:true},confirmedAt:{type:Date,required:true},status:{type:String,enum:['issued','void'],default:'issued'},sellerSnapshot:mongoose.Schema.Types.Mixed,customerSnapshot:mongoose.Schema.Types.Mixed,fulfilmentSnapshot:mongoose.Schema.Types.Mixed,itemSnapshots:[line],subtotal:Number,couponCode:String,discount:Number,shipping:Number,tax:Number,roundOff:Number,grandTotal:Number,amountInWords:String,currency:String,paymentMethod:String,paymentStatus:String,safePaymentReference:String,terms:String,generationKey:{type:String,required:true,unique:false},pdfVersion:{type:String,default:'1.0'}},{timestamps:true,collection:'invoices'});
+schema.index({siteId:1,invoiceNumber:1},{unique:true,name:'uq_invoices_site_number'});
+schema.index({siteId:1,orderId:1},{unique:true,name:'uq_invoices_site_order'});
+schema.index({siteId:1,generationKey:1},{unique:true,name:'uq_invoices_site_generation'});
+schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('Invoice',schema);

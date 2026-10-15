@@ -1,0 +1,2 @@
+# Deployment
+Copy `.env.example` values into the hosting service. Use sandbox credentials first. Set `PUBLIC_BASE_URL` to the HTTPS public origin, configure Cashfree webhook as `/webhooks/cashfree`, and retain Razorpay's existing webhook. Run `npm run check`, `npm test`, `npm run site:audit`, `npm run site:verify`, and `npm run indexes`. Switch `CASHFREE_ENV=production` only with production credentials. Never set `NODE_TLS_REJECT_UNAUTHORIZED=0`.

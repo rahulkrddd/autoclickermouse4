@@ -1,0 +1,652 @@
+{
+  "findings": [
+    {
+      "file": "app.js",
+      "line": 17,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 17,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 17,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 18,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 18,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 18,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 18,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 18,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 18,
+      "operation": "aggregate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 22,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 22,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 22,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "aggregate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "aggregate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "aggregate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 23,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 24,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 24,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 24,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 30,
+      "operation": "findById",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 32,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 32,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 33,
+      "operation": "deleteMany",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 36,
+      "operation": "findByIdAndUpdate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 37,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 37,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 38,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 38,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 41,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 43,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 43,
+      "operation": "findById",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 46,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 50,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 50,
+      "operation": "deleteMany",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "app.js",
+      "line": 50,
+      "operation": "collection",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 6,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 7,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 7,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 9,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 9,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 10,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 12,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 14,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 15,
+      "operation": "findByIdAndDelete",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 16,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 16,
+      "operation": "deleteMany",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 17,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 18,
+      "operation": "findById",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 18,
+      "operation": "findByIdAndUpdate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 19,
+      "operation": "findByIdAndDelete",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 20,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 21,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 22,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 25,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 26,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 27,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 28,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 29,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 32,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 74,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 74,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "line": 103,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/adminDataService.js",
+      "line": 16,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/adminDataService.js",
+      "line": 16,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/adminDataService.js",
+      "line": 16,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/adminDataService.js",
+      "line": 32,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/adminDataService.js",
+      "line": 32,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/inventoryService.js",
+      "line": 6,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/inventoryService.js",
+      "line": 6,
+      "operation": "findById",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/invoiceService.js",
+      "line": 16,
+      "operation": "findOne",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/productAdminService.js",
+      "line": 13,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/productAdminService.js",
+      "line": 14,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/productAdminService.js",
+      "line": 14,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/productAdminService.js",
+      "line": 15,
+      "operation": "findById",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/productAdminService.js",
+      "line": 15,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/productAdminService.js",
+      "line": 15,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/reorderEligibilityService.js",
+      "line": 3,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/reorderEligibilityService.js",
+      "line": 3,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "services/settingsService.js",
+      "line": 5,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/backfill-invoices.js",
+      "line": 1,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/backfill-product-defaults.js",
+      "line": 1,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/indexes.js",
+      "line": 3,
+      "operation": "aggregate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/indexes.js",
+      "line": 4,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/indexes.js",
+      "line": 4,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/migrate-site-id.js",
+      "line": 1,
+      "operation": "collection",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/migrate-site-id.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "explicit site filter"
+    },
+    {
+      "file": "scripts/migrate-site-id.js",
+      "line": 1,
+      "operation": "updateMany",
+      "classification": "explicit site filter"
+    },
+    {
+      "file": "scripts/migrate-site-id.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "explicit site filter"
+    },
+    {
+      "file": "scripts/migrate-site-images.js",
+      "line": 1,
+      "operation": "find",
+      "classification": "explicit site filter"
+    },
+    {
+      "file": "scripts/migrate.js",
+      "line": 1,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/migrate.js",
+      "line": 1,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/reconcile-customers.js",
+      "line": 3,
+      "operation": "aggregate",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-products.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-products.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-products.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-products.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-products.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-queries.js",
+      "line": 3,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-queries.js",
+      "line": 3,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-queries.js",
+      "line": 3,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-queries.js",
+      "line": 3,
+      "operation": "find",
+      "classification": "site plugin protected; review required"
+    },
+    {
+      "file": "scripts/validate-site-isolation.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "explicit site filter"
+    },
+    {
+      "file": "scripts/validate-site-isolation.js",
+      "line": 1,
+      "operation": "countDocuments",
+      "classification": "explicit site filter"
+    }
+  ]
+}

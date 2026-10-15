@@ -1,0 +1,31 @@
+module.exports={
+  "siteName": "Manna's Gifting",
+  "description": "Handmade gifts, resin art, art and craft kits, personalized gifts, gifting hampers, DIY craft products, coloring kits and creative handmade products for every occasion.",
+  "keywords": [
+    "handmade gifts",
+    "personalized gifts",
+    "resin art",
+    "resin keychain",
+    "gift hampers",
+    "art and craft",
+    "diy craft kit",
+    "creative gifts",
+    "birthday gifts",
+    "anniversary gifts",
+    "return gifts",
+    "kids craft kit",
+    "coloring kit",
+    "paintable moulds",
+    "white cement art",
+    "custom gifts",
+    "handmade products",
+    "home decor gifts",
+    "gift box",
+    "resin alphabet keychain"
+  ],
+  "logo": "/logo/site-b.ico",
+  "favicon": "/logo/site-b.ico",
+  "canonicalDomain": "",
+  "socialImage": "/logo/site-b.ico",
+  "siteId": "site-b"
+};

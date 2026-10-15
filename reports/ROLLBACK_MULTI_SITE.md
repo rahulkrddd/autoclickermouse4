@@ -1,0 +1,2 @@
+# Rollback
+Stop writes, retain Atlas and bucket backups, deploy the prior artifact, and restore only from reviewed backups if a migration changed data. Do not remove siteId fields or compound indexes during an emergency rollback. Never merge tenant records. Storage migration cleanup should be run only after target-path verification.

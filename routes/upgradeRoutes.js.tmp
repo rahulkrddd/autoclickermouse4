@@ -1,0 +1,6 @@
+</file>
+
+<file path="scripts/audit-products.js">
+require('dotenv').config();const{connectDB,closeDB}=require('../config/db');const Product=require('../models/Product');
+async function groups(field,match={}){return Product.aggregate([{$match:match},{$group:{_id:`$${field}`,count:{$sum:1},products:{$push:{_id:'$_id',name:'$name',legacyId:'$legacyId',slug:'$slug',sku:'$sku',active:'$active',createdAt:'$createdAt'}}}},{$match:{_id:{$nin:[null,'']},count:{$gt:1}}},{$sort:{count:-1,_id:1}}])}
+(async()=>{await connectDB();const [legacyId,slug,sku]=await Promise.all([groups('legacyId'),groups('slug'),groups('sku',{sku:{$type:'string',$gt:''}})]);const report={generatedAt:new Date().toISOString(),totalProducts:await Product.countDocuments(),duplicates:{legacyId,slug,sku},safeToCreateUniqueIndexes:![...legacyId,...slug,...sku].length};console.log(JSON.stringify(report,null,2));process.exitCode=report.safeToCreateUniqueIndexes?0:2;await closeDB()})().catch(e=>{console.error(e);process.exit(1)});
