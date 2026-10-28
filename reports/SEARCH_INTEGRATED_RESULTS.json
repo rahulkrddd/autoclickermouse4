@@ -1,0 +1,631 @@
+{
+  "passed": 125,
+  "failed": 0,
+  "results": [
+    {
+      "test": "site-a 320 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 320 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 320 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 320, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-a 320 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 320 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 320 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 390 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 390 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 390 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 390, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-a 390 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 390 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 390 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 700 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 700 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 700 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 700, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-a 700 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 700 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 700 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 701 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 701 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 701 overlay above products",
+      "passed": true,
+      "detail": "{'x': 18, 'w': 665, 'b': 247, 'hit': True}"
+    },
+    {
+      "test": "site-a 701 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 701 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 701 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1024 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1024 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1024 overlay above products",
+      "passed": true,
+      "detail": "{'x': 219.421875, 'w': 275.453125, 'b': 200, 'hit': True}"
+    },
+    {
+      "test": "site-a 1024 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1024 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1024 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1440 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1440 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1440 overlay above products",
+      "passed": true,
+      "detail": "{'x': 219.421875, 'w': 691.453125, 'b': 200, 'hit': True}"
+    },
+    {
+      "test": "site-a 1440 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1440 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1440 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 320 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 320 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 320 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 320, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-b 320 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 320 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 320 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 390 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 390 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 390 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 390, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-b 390 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 390 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 390 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 700 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 700 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 700 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 700, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-b 700 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 700 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 700 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 701 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 701 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 701 overlay above products",
+      "passed": true,
+      "detail": "{'x': 18, 'w': 665, 'b': 258, 'hit': True}"
+    },
+    {
+      "test": "site-b 701 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 701 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 701 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1024 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1024 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1024 overlay above products",
+      "passed": true,
+      "detail": "{'x': 187.375, 'w': 316.3125, 'b': 200, 'hit': True}"
+    },
+    {
+      "test": "site-b 1024 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1024 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1024 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1440 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1440 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1440 overlay above products",
+      "passed": true,
+      "detail": "{'x': 187.375, 'w': 732.3125, 'b': 200, 'hit': True}"
+    },
+    {
+      "test": "site-b 1440 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1440 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1440 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 320 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 320 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 320 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 320, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-c 320 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 320 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 320 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 390 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 390 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 390 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 390, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-c 390 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 390 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 390 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 700 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 700 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 700 overlay above products",
+      "passed": true,
+      "detail": "{'x': 0, 'w': 700, 'b': 844, 'hit': True}"
+    },
+    {
+      "test": "site-c 700 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 700 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 700 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 701 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 701 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 701 overlay above products",
+      "passed": true,
+      "detail": "{'x': 18, 'w': 665, 'b': 257.5, 'hit': True}"
+    },
+    {
+      "test": "site-c 701 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 701 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 701 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1024 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1024 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1024 overlay above products",
+      "passed": true,
+      "detail": "{'x': 132.328125, 'w': 370.25, 'b': 200, 'hit': True}"
+    },
+    {
+      "test": "site-c 1024 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1024 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1024 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1440 empty history is honest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1440 typed actual product with image and category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1440 overlay above products",
+      "passed": true,
+      "detail": "{'x': 132.328125, 'w': 786.25, 'b': 200, 'hit': True}"
+    },
+    {
+      "test": "site-c 1440 submitted search persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1440 empty input restores history after reload",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1440 delete history persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "History deduplicated case-insensitively",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Product click opens correct details",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "No match message",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Keyboard product selection navigates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Touch product tap navigates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Touch empty focus shows persisted history",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Existing current-source history retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Other site history not exposed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "History click repeats search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button saves history",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Escape closes and restores scrolling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Malformed history handled safely",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Orders login still works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Admin login still works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Cart existing item preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search from cart reaches home query",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "No browser errors",
+      "passed": true,
+      "detail": "[]"
+    }
+  ]
+}

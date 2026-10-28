@@ -1,0 +1,2 @@
+# Release status: BLOCKED
+Local syntax check and 183 tests pass. The AST query audit still reports review-required calls, so this artifact must not be represented as production-approved under the requested acceptance rules. Live Atlas migrations, real Razorpay/webhook tests and real Supabase copy/delete verification were not run because credentials and safe test endpoints were not supplied. The migration and validation commands are included, but their live reports cannot truthfully be fabricated.

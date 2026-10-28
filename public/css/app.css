@@ -1,0 +1,12 @@
+/* Ordered modular CSS entrypoint. Import order preserves the original cascade exactly. */
+@import url("/css/01-foundation.css");
+@import url("/css/02-shared-components.css");
+@import url("/css/03-storefront.css");
+@import url("/css/04-product-checkout.css");
+@import url("/css/05-orders-cart-reviews.css");
+@import url("/css/06-admin-foundation.css");
+@import url("/css/07-admin-products.css");
+@import url("/css/08-responsive-enhancements.css?v=product-name-v4");
+
+/* Isolated requested fixes, kept outside the legacy stylesheet parser error. */
+@import url("/css/storefront-polish.css?v=mg1e3-five-fixes-1");

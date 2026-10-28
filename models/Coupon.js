@@ -1,0 +1,4 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');const schema=new mongoose.Schema({code:{type:String,uppercase:true,trim:true,unique:false,required:true},type:{type:String,enum:['percent','fixed'],required:true},value:{type:Number,min:0,required:true},minOrder:{type:Number,min:0,default:0},maxDiscount:{type:Number,min:0},usageLimit:{type:Number,min:0},perCustomerLimit:{type:Number,min:0},usageCount:{type:Number,min:0,default:0},applicableProductIds:[{type:mongoose.Schema.Types.ObjectId,ref:'Product'}],applicableCategoryIds:[String],startAt:Date,expiresAt:Date,active:{type:Boolean,default:true}},{timestamps:true,collection:'coupons'});schema.index({active:1,expiresAt:1});schema.index({siteId:1,code:1},{unique:true,name:'uq_coupons_site_code'});
+schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('Coupon',schema);

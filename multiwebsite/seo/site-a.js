@@ -1,0 +1,32 @@
+module.exports={
+  "siteName": "Auto Clicker Mouse",
+  "description": "Buy Auto Clicker Mouse, Dual Mode Auto Clicker Mouse, USB Auto Click Mouse, Programmable Mouse, Auto Clicking Mouse and Productivity Accessories online at best prices.",
+  "keywords": [
+    "auto clicker mouse",
+    "dual mode auto clicker mouse",
+    "usb auto clicker mouse",
+    "automatic clicking mouse",
+    "programmable mouse",
+    "mouse jiggler",
+    "usb mouse jiggler",
+    "office productivity mouse",
+    "gaming auto clicker mouse",
+    "macro mouse",
+    "auto clicking device",
+    "computer accessories",
+    "wireless mouse",
+    "rgb gaming mouse",
+    "mouse pad",
+    "usb hub",
+    "clicking mouse",
+    "auto click mouse india"
+  ],
+  "logo": "/logo/site-a.ico",
+  "favicon": "/logo/site-a.ico",
+  "canonicalDomain": "",
+  "socialImage": "/logo/site-a.ico",
+  "searchPlaceholder": "Search AutoClickerMouse",
+  "footerBrand": "Auto Clicker Mouse",
+  "homeTitle": "Auto Clicker Mouse",
+  "siteId": "site-a"
+};

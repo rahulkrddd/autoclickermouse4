@@ -1,0 +1,4 @@
+const alwaysRequired=['SITE_ID','SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','SUPABASE_STORAGE_BUCKET','MONGODB_URI','SESSION_SECRET','ADMIN_PASSWORD'];
+const on=k=>String(process.env[k]??'true').toLowerCase()==='true';
+function validateEnv(){const missing=alwaysRequired.filter(k=>!process.env[k]);if(on('CASHFREE_ENABLED'))for(const k of ['CASHFREE_APP_ID','CASHFREE_SECRET_KEY','CASHFREE_API_VERSION','PUBLIC_BASE_URL'])if(!process.env[k])missing.push(k);if(on('RAZORPAY_ENABLED'))for(const k of ['RAZORPAY_KEY_ID','RAZORPAY_KEY_SECRET','RAZORPAY_WEBHOOK_SECRET'])if(!process.env[k])missing.push(k);if(!['sandbox','production'].includes(String(process.env.CASHFREE_ENV||'sandbox').toLowerCase()))throw new Error('CASHFREE_ENV must be sandbox or production');if(missing.length)throw new Error('Missing required environment variables: '+[...new Set(missing)].join(', '));}
+module.exports={validateEnv};

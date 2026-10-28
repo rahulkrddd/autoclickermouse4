@@ -1,0 +1,4 @@
+# Shared-database multi-site architecture
+Server-owned SITE_ID is validated at process load. Every tenant model installs a defensive Mongoose plugin that stamps creates, rejects foreign siteId writes, scopes query middleware, injects aggregate $match after mandatory first stages, and scopes bulk operations. Business services should continue passing siteId explicitly when they are refactored or extended.
+
+Supabase objects use `{siteId}/products/{safeProductId}/{uuid}.{ext}`. This provides management isolation, not confidentiality when the bucket is public. For private media use a private bucket and short-lived signed URLs without exposing the service role key.

@@ -1,0 +1,3 @@
+function maxQty(p){const available=Math.max(0,Number(p.stock||0)-Number(p.reservedStock||0));return p.maxOrderQty==null?available:Math.min(available,Number(p.maxOrderQty))}
+function validate(p,qty,mode='buy'){if(!p||!p.active)throw Error('Product is unavailable');if(mode==='buy'&&p.buyNowEnabled===false)throw Error('Buy Now is disabled for this product');if(mode==='cart'&&p.addToCartEnabled===false)throw Error('Add to Cart is disabled for this product');if(!Number.isInteger(qty)||qty<Number(p.minOrderQty||1))throw Error(`Minimum quantity for ${p.name} is ${p.minOrderQty||1}`);if(qty>maxQty(p))throw Error(`Maximum available quantity for ${p.name} is ${maxQty(p)}`);return true}
+module.exports={maxQty,validate};

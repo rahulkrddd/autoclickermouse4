@@ -1,0 +1,441 @@
+{
+  "javascript": [
+    {
+      "file": "app.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "config/db.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "config/env.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "config/site.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "config/supabase.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Activity.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/AdminAuditLog.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Counter.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Coupon.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/CouponRedemption.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Customer.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/InventoryLog.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Invoice.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Order.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Payment.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/PickupLocation.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Product.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Review.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Setting.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "models/Wishlist.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/config/seo.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/content-loader.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/faqs/site-a.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/faqs/site-b.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/faqs/site-c.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/policies/site-a.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/policies/site-b.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/policies/site-c.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/public/js/seo.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/redesign/default.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/redesign/site-a.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/redesign/site-b.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/redesign/site-c.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/seo/default.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/seo/index.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/seo/site-a.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/seo/site-b.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "multiwebsite/seo/site-c.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "plugins/siteScopedPlugin.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/admin.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/cart.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/checkout.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/common.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/loading.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/orders.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/product.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/review.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/store.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/js/swr-cache.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "routes/upgradeRoutes.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/audit-products.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/audit-unscoped-queries.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/backfill-invoices.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/backfill-product-defaults.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/check-storage.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/indexes.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/migrate-site-id.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/migrate-site-images.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/migrate-site-indexes.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/migrate.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/reconcile-customers.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/validate-db.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/validate-products.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/validate-queries.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "scripts/validate-site-isolation.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/adminDataService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/compatibilityService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/inventoryService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/invoiceService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/payment/cashfreeGateway.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/payment/gatewayFactory.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/payment/paymentService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/payment/razorpayGateway.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/pricingService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/productAdminService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/productImageLifecycleService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/productVariantService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/purchaseRules.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/reorderEligibilityService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/seoPageService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/settingsService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/siteInvariantService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/siteScopeService.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/storePolicy.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "services/supabaseStorageService.js",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "inline": [
+    {
+      "file": "public/faq.html",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "public/policies.html",
+      "passed": true,
+      "error": ""
+    }
+  ]
+}

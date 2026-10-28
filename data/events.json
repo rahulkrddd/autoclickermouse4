@@ -1,0 +1,20 @@
+[
+  {
+    "id": "e8557795-9b58-48b1-8bdd-bc9c563c2e6c",
+    "type": "checkout_started",
+    "at": "2026-09-29T18:27:42.243Z",
+    "session": "h-_rp-iJTEEKgZf22l1odDSSLZQzZzyN",
+    "name": "Rahul Gupta",
+    "mobile": "9876543210",
+    "orderId": "order_test_1"
+  },
+  {
+    "id": "bc1d577a-b38c-4eac-afb5-f28a29df9310",
+    "type": "checkout_started",
+    "at": "2026-09-29T18:27:42.318Z",
+    "session": "h-_rp-iJTEEKgZf22l1odDSSLZQzZzyN",
+    "name": "Rahul Gupta",
+    "mobile": "9876543210",
+    "orderId": "order_test_2"
+  }
+]
