@@ -1,0 +1,23 @@
+{
+  "passed": 18,
+  "checks": [
+    "Admin script initializes without runtime errors",
+    "Coupon save renders new value without refresh",
+    "Future activation opens edit popup with date message",
+    "Future activation focuses start date",
+    "Corrected dates save and render Active",
+    "Expired activation opens popup and focuses expiry",
+    "Pickup save renders new name without refresh",
+    "Product save renders new name without refresh",
+    "Admin flows have no uncaught JS errors",
+    "Cart requests mobile when per-customer eligibility needs it",
+    "Cart coupon sends customer mobile to validation",
+    "Changing cart customer clears stale coupon discount",
+    "Cart flow has no uncaught JS errors",
+    "Checkout loader is visible while APIs are pending",
+    "Checkout ring has active CSS animation",
+    "Mobile loader fits viewport",
+    "Pending checkout loader can be cancelled",
+    "Checkout harness has no uncaught JS errors: []"
+  ]
+}

@@ -1,0 +1,2 @@
+# Migration report
+Run site-id dry-run, apply, verify, index dry-run, reviewed index apply, image dry-run, image apply and final isolation validation in that order. No migration runs on application startup. Back up Atlas and the Supabase bucket first. Unknown indexes are never automatically removed by the included scripts.

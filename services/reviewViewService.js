@@ -1,0 +1,3 @@
+const Review=require('../models/Review');
+async function forOrders(orders){const rows=await Review.find({orderId:{$in:orders.map(o=>o._id)}}).lean();const out={};for(const r of rows){const key=String(r.orderId);out[key]||={};out[key][r.orderItemId]={shipping:r.shippingRating,packaging:r.packagingRating,product:r.productRating,overall:r.overallRating,text:r.reviewText||'',status:r.status,createdAt:r.createdAt}}return out}
+module.exports={forOrders};

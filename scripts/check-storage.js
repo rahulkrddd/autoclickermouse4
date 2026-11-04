@@ -1,0 +1,1 @@
+require('dotenv').config();const{getSupabase}=require('../config/supabase');(async()=>{const c=getSupabase();if(!c)throw Error('Supabase is not configured');const{error}=await c.storage.getBucket(process.env.SUPABASE_STORAGE_BUCKET||'product-images');if(error)throw error;console.log('storage: connected')})().catch(e=>{console.error(e.message);process.exit(1)});

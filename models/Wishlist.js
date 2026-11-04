@@ -1,0 +1,4 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');const schema=new mongoose.Schema({customerId:{type:mongoose.Schema.Types.ObjectId,ref:'Customer',required:true},productId:{type:mongoose.Schema.Types.ObjectId,ref:'Product',required:true},createdAt:{type:Date,default:Date.now}},{collection:'wishlists',versionKey:false});schema.index({customerId:1,productId:1},{unique:false});schema.index({siteId:1,customerId:1,productId:1},{unique:true,name:'uq_wishlist_site_customer_product'});
+schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('Wishlist',schema);

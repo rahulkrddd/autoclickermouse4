@@ -1,0 +1,25 @@
+✔ orders page loads common before orders and checkout; no duplicate global declarations (101.140596ms)
+✔ cashfree reorder creates online request without missing helper errors (47.460797ms)
+✔ cashfree error visible and button reset when analytics absent (119.348788ms)
+✔ cashfree error visible and button reset when analytics throws (3.962354ms)
+✔ cashfree error visible and button reset when analytics rejects (1.783331ms)
+✔ razorpay reorder creates online request without missing helper errors (1.091996ms)
+✔ razorpay error visible and button reset when analytics absent (3.032093ms)
+✔ razorpay error visible and button reset when analytics throws (2.832525ms)
+✔ razorpay error visible and button reset when analytics rejects (9.215207ms)
+✔ Razorpay dismissal restores form and button without tracker (2.238507ms)
+✔ Razorpay asynchronous verification failure is handled visibly (1.841758ms)
+✔ Cashfree cancellation is visible without tracker (1.048408ms)
+✔ analytics event is still recorded when available (0.805873ms)
+✔ payCO dispatch for cashfree (1.8216ms)
+✔ payCO dispatch for razorpay (3.103805ms)
+✔ payCO dispatch for cashfree+razorpay (1.73093ms)
+✔ previous inventory fix remains unreserved for online delivery; pickup retains holds (76.43977ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 641.215611

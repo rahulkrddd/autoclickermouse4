@@ -1,0 +1,4 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');const schema=new mongoose.Schema({code:{type:String,unique:false},name:String,address:{line1:String,line2:String,city:String,district:String,state:String,pincode:String,country:String},contactNumber:String,active:{type:Boolean,default:true},availableProductIds:[{type:mongoose.Schema.Types.ObjectId,ref:'Product'}],openingHours:mongoose.Schema.Types.Mixed},{timestamps:true,collection:'pickup_locations'});schema.index({siteId:1,code:1},{unique:true,name:'uq_pickups_site_code'});
+schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('PickupLocation',schema);

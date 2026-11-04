@@ -1,0 +1,657 @@
+{
+  "mode": "Offline Chromium with mocked API responses; not live database/payment verification",
+  "passed": 130,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Baseline reproduces FAQ badge stuck at zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Baseline reproduces missing Admin handler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Baseline reproduces missing Orders handler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ badge restores site cart quantity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ no browser script errors",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "FAQ missing nav-active script removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Admin opens existing login modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ login close works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Orders asks mobile when absent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Existing numeric input filter preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Orders submit navigates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Orders uses original POST endpoint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ saved mobile navigation preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Admin submit navigates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Admin uses original POST endpoint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ link navigates /cart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ link navigates /review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ link navigates /",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ search preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ expand preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ collapse preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ empty search state preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /FAQs",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /FAQs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /FAQs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /cart",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /cart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /cart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /review",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /product/test-product",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /product/test-product",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /product/test-product",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /my-orders?mobileNumber=9999999999",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Return to store /my-orders?mobileNumber=9999999999",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /admin",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Return to store /admin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /policies",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Return to store /policies",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "History restore refreshes badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Other tab cart update refreshes badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Other site cart cannot change current badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Mobile FAQ Admin modal works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ script smoke",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "site-b FAQ site-scoped cart badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ Admin modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ Orders modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ Cart navigation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ script smoke",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "site-c FAQ site-scoped cart badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ Admin modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ Orders modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ Cart navigation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Variation Add opens detail page without adding item",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Variation detail selector available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Variation Buy Now opens detail page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Detail Add preserves selected variation ID",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Detail Buy Now passes selected variation to existing checkout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Detail option warning is English",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Shared Add option warning is English",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Non-variation Add remains direct cart add",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Non-variation Buy remains direct checkout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Base and variant cart rows remain separate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Base cart has no redundant Base labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Base cart retains name price and SKU",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Variant cart shows attributes once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Variant cart retains variation SKU and price",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Variant cart detail link retains variant query",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Cart quantity still updates only selected variation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Cart remove still preserves base item",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a full title at 320px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 154, 'scroll': 154, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 871.09375, 'next': 874.09375}"
+    },
+    {
+      "test": "site-a compact single-line footer at 320px",
+      "passed": true,
+      "detail": "{'height': 39.1875, 'width': 320, 'viewport': 320, 'textWidth': 142.84375, 'lines': 1, 'font': '8px', 'scroll': 320, 'client': 320}"
+    },
+    {
+      "test": "site-a full title at 360px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 115, 'scroll': 115, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 811.6875, 'next': 814.6875}"
+    },
+    {
+      "test": "site-a compact single-line footer at 360px",
+      "passed": true,
+      "detail": "{'height': 39.828125, 'width': 360, 'viewport': 360, 'textWidth': 150.9375, 'lines': 1, 'font': '8.46px', 'scroll': 360, 'client': 360}"
+    },
+    {
+      "test": "site-a full title at 375px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 115, 'scroll': 115, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 812.6875, 'next': 815.6875}"
+    },
+    {
+      "test": "site-a compact single-line footer at 375px",
+      "passed": true,
+      "detail": "{'height': 40.328125, 'width': 375, 'viewport': 375, 'textWidth': 157.078125, 'lines': 1, 'font': '8.8125px', 'scroll': 375, 'client': 375}"
+    },
+    {
+      "test": "site-a full title at 390px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 115, 'scroll': 115, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 813.6875, 'next': 816.6875}"
+    },
+    {
+      "test": "site-a compact single-line footer at 390px",
+      "passed": true,
+      "detail": "{'height': 40.828125, 'width': 390, 'viewport': 390, 'textWidth': 163.484375, 'lines': 1, 'font': '9.165px', 'scroll': 390, 'client': 390}"
+    },
+    {
+      "test": "site-a full title at 412px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 96, 'scroll': 96, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 794.484375, 'next': 797.484375}"
+    },
+    {
+      "test": "site-a compact single-line footer at 412px",
+      "passed": true,
+      "detail": "{'height': 41.5625, 'width': 412, 'viewport': 412, 'textWidth': 172.703125, 'lines': 1, 'font': '9.682px', 'scroll': 412, 'client': 412}"
+    },
+    {
+      "test": "site-a full title at 720px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 126, 'scroll': 126, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 914.984375, 'next': 917.984375}"
+    },
+    {
+      "test": "site-a compact single-line footer at 720px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 720, 'viewport': 720, 'textWidth': 249.96875, 'lines': 1, 'font': '14px', 'scroll': 720, 'client': 720}"
+    },
+    {
+      "test": "site-a full title at 1024px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 152, 'scroll': 152, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 938.90625, 'next': 941.90625}"
+    },
+    {
+      "test": "site-a compact single-line footer at 1024px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1024, 'viewport': 1024, 'textWidth': 249.96875, 'lines': 1, 'font': '14px', 'scroll': 1024, 'client': 1024}"
+    },
+    {
+      "test": "site-a full title at 1440px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 126, 'scroll': 126, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 961.078125, 'next': 964.078125}"
+    },
+    {
+      "test": "site-a compact single-line footer at 1440px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1440, 'viewport': 1440, 'textWidth': 249.96875, 'lines': 1, 'font': '14px', 'scroll': 1440, 'client': 1440}"
+    },
+    {
+      "test": "site-a full title at 1902px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 126, 'scroll': 126, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 964.109375, 'next': 967.109375}"
+    },
+    {
+      "test": "site-a compact single-line footer at 1902px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1902, 'viewport': 1902, 'textWidth': 249.96875, 'lines': 1, 'font': '14px', 'scroll': 1902, 'client': 1902}"
+    },
+    {
+      "test": "site-b full title at 320px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 123, 'scroll': 123, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 806.3125, 'next': 809.3125}"
+    },
+    {
+      "test": "site-b compact single-line footer at 320px",
+      "passed": true,
+      "detail": "{'height': 39.1875, 'width': 320, 'viewport': 320, 'textWidth': 189.15625, 'lines': 1, 'font': '8px', 'scroll': 320, 'client': 320}"
+    },
+    {
+      "test": "site-b full title at 360px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 105, 'scroll': 105, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 795.671875, 'next': 798.671875}"
+    },
+    {
+      "test": "site-b compact single-line footer at 360px",
+      "passed": true,
+      "detail": "{'height': 39.828125, 'width': 360, 'viewport': 360, 'textWidth': 199.875, 'lines': 1, 'font': '8.46px', 'scroll': 360, 'client': 360}"
+    },
+    {
+      "test": "site-b full title at 375px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 105, 'scroll': 105, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 755.5625, 'next': 758.5625}"
+    },
+    {
+      "test": "site-b compact single-line footer at 375px",
+      "passed": true,
+      "detail": "{'height': 40.328125, 'width': 375, 'viewport': 375, 'textWidth': 208, 'lines': 1, 'font': '8.8125px', 'scroll': 375, 'client': 375}"
+    },
+    {
+      "test": "site-b full title at 390px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 88, 'scroll': 88, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 740.609375, 'next': 743.609375}"
+    },
+    {
+      "test": "site-b compact single-line footer at 390px",
+      "passed": true,
+      "detail": "{'height': 40.828125, 'width': 390, 'viewport': 390, 'textWidth': 216.5, 'lines': 1, 'font': '9.165px', 'scroll': 390, 'client': 390}"
+    },
+    {
+      "test": "site-b full title at 412px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 88, 'scroll': 88, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 744.390625, 'next': 747.390625}"
+    },
+    {
+      "test": "site-b compact single-line footer at 412px",
+      "passed": true,
+      "detail": "{'height': 41.5625, 'width': 412, 'viewport': 412, 'textWidth': 228.6875, 'lines': 1, 'font': '9.682px', 'scroll': 412, 'client': 412}"
+    },
+    {
+      "test": "site-b full title at 720px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 81, 'scroll': 81, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 894.40625, 'next': 897.40625}"
+    },
+    {
+      "test": "site-b compact single-line footer at 720px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 720, 'viewport': 720, 'textWidth': 331.015625, 'lines': 1, 'font': '14px', 'scroll': 720, 'client': 720}"
+    },
+    {
+      "test": "site-b full title at 1024px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 101, 'scroll': 101, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 820.1875, 'next': 823.1875}"
+    },
+    {
+      "test": "site-b compact single-line footer at 1024px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1024, 'viewport': 1024, 'textWidth': 331.015625, 'lines': 1, 'font': '14px', 'scroll': 1024, 'client': 1024}"
+    },
+    {
+      "test": "site-b full title at 1440px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 81, 'scroll': 81, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 829, 'next': 832}"
+    },
+    {
+      "test": "site-b compact single-line footer at 1440px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1440, 'viewport': 1440, 'textWidth': 331.015625, 'lines': 1, 'font': '14px', 'scroll': 1440, 'client': 1440}"
+    },
+    {
+      "test": "site-b full title at 1902px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 81, 'scroll': 81, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 829, 'next': 832}"
+    },
+    {
+      "test": "site-b compact single-line footer at 1902px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1902, 'viewport': 1902, 'textWidth': 331.015625, 'lines': 1, 'font': '14px', 'scroll': 1902, 'client': 1902}"
+    },
+    {
+      "test": "site-c full title at 320px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 154, 'scroll': 154, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 2650.421875, 'next': 2653.421875}"
+    },
+    {
+      "test": "site-c compact single-line footer at 320px",
+      "passed": true,
+      "detail": "{'height': 39.1875, 'width': 320, 'viewport': 320, 'textWidth': 169.703125, 'lines': 1, 'font': '8px', 'scroll': 320, 'client': 320}"
+    },
+    {
+      "test": "site-c full title at 360px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 115, 'scroll': 115, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 2566.875, 'next': 2569.875}"
+    },
+    {
+      "test": "site-c compact single-line footer at 360px",
+      "passed": true,
+      "detail": "{'height': 39.828125, 'width': 360, 'viewport': 360, 'textWidth': 179.3125, 'lines': 1, 'font': '8.46px', 'scroll': 360, 'client': 360}"
+    },
+    {
+      "test": "site-c full title at 375px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 115, 'scroll': 115, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 2571.765625, 'next': 2574.765625}"
+    },
+    {
+      "test": "site-c compact single-line footer at 375px",
+      "passed": true,
+      "detail": "{'height': 40.328125, 'width': 375, 'viewport': 375, 'textWidth': 186.59375, 'lines': 1, 'font': '8.8125px', 'scroll': 375, 'client': 375}"
+    },
+    {
+      "test": "site-c full title at 390px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 115, 'scroll': 115, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 2575.65625, 'next': 2578.65625}"
+    },
+    {
+      "test": "site-c compact single-line footer at 390px",
+      "passed": true,
+      "detail": "{'height': 40.828125, 'width': 390, 'viewport': 390, 'textWidth': 194.21875, 'lines': 1, 'font': '9.165px', 'scroll': 390, 'client': 390}"
+    },
+    {
+      "test": "site-c full title at 412px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 96, 'scroll': 96, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 2541.125, 'next': 2544.125}"
+    },
+    {
+      "test": "site-c compact single-line footer at 412px",
+      "passed": true,
+      "detail": "{'height': 41.5625, 'width': 412, 'viewport': 412, 'textWidth': 205.15625, 'lines': 1, 'font': '9.682px', 'scroll': 412, 'client': 412}"
+    },
+    {
+      "test": "site-c full title at 720px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 88, 'scroll': 88, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 1826.46875, 'next': 1829.46875}"
+    },
+    {
+      "test": "site-c compact single-line footer at 720px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 720, 'viewport': 720, 'textWidth': 296.953125, 'lines': 1, 'font': '14px', 'scroll': 720, 'client': 720}"
+    },
+    {
+      "test": "site-c full title at 1024px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 110, 'scroll': 110, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 1524.484375, 'next': 1527.484375}"
+    },
+    {
+      "test": "site-c compact single-line footer at 1024px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1024, 'viewport': 1024, 'textWidth': 296.953125, 'lines': 1, 'font': '14px', 'scroll': 1024, 'client': 1024}"
+    },
+    {
+      "test": "site-c full title at 1440px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 88, 'scroll': 88, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 1454.765625, 'next': 1457.765625}"
+    },
+    {
+      "test": "site-c compact single-line footer at 1440px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1440, 'viewport': 1440, 'textWidth': 296.953125, 'lines': 1, 'font': '14px', 'scroll': 1440, 'client': 1440}"
+    },
+    {
+      "test": "site-c full title at 1902px",
+      "passed": true,
+      "detail": "{'text': 'Mannas Gifting Store - Kids DIY Animal Painting Gift Kit with Six Paintable Animal Figures and Creative Craft Essentials', 'client': 88, 'scroll': 88, 'overflow': 'visible', 'lineClamp': 'none', 'bottom': 1454.765625, 'next': 1457.765625}"
+    },
+    {
+      "test": "site-c compact single-line footer at 1902px",
+      "passed": true,
+      "detail": "{'height': 47.59375, 'width': 1902, 'viewport': 1902, 'textWidth': 296.953125, 'lines': 1, 'font': '14px', 'scroll': 1902, 'client': 1902}"
+    },
+    {
+      "test": "Long unbroken product title wraps without clipping",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Larger text setting does not clip product title",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

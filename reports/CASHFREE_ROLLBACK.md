@@ -1,0 +1,2 @@
+# Rollback
+Set `CASHFREE_ENABLED=false` and `DEFAULT_ONLINE_PAYMENT_GATEWAY=razorpay` for immediate logical rollback. Keep the new Payment fields and indexes because they are backward-compatible. Restore changed files from source control only after pending Cashfree payments are reconciled. Do not delete payment or order records.

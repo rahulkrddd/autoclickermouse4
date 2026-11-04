@@ -1,0 +1,4 @@
+const money=n=>Math.round(Number(n)*100)/100;
+function eligible(coupon,lines){const products=(coupon.applicableProductIds||[]).map(String),categories=(coupon.applicableCategoryIds||[]).map(String);return lines.filter(x=>(!products.length||products.includes(String(x.p._id)))&&(!categories.length||categories.includes(String(x.p.category||''))))}
+function discount(coupon,lines){const selected=eligible(coupon,lines),subtotal=money(selected.reduce((n,x)=>n+Number(x.p.price)*x.q,0));if(!selected.length)throw Error('This coupon is not applicable to the selected products.');let amount=coupon.type==='percent'?Math.floor(subtotal*coupon.value/100):Number(coupon.value);if(coupon.maxDiscount!=null)amount=Math.min(amount,coupon.maxDiscount);return{discount:money(Math.min(subtotal,Math.max(0,amount))),eligibleIds:selected.map(x=>String(x.p._id))}}
+module.exports={eligible,discount};
