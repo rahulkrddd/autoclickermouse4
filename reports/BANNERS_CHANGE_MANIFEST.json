@@ -1,0 +1,33 @@
+{
+  "baseline": "mg1n5.txt",
+  "originalFilesRetained": 248,
+  "missingOriginalFiles": [],
+  "changedOriginalFiles": [
+    "public/js/admin.js",
+    "public/js/store.js",
+    "public/admin.html",
+    "public/index.html",
+    "scripts/indexes.js",
+    "services/recoveryService.js",
+    "app.js",
+    "package.json"
+  ],
+  "addedFiles": [
+    "BANNERS_README.md",
+    "models/Banner.js",
+    "reports/BANNERS_BROWSER_EXTRA_RESULTS.json",
+    "reports/BANNERS_BROWSER_RESULTS.json",
+    "reports/BANNERS_NODE_TEST_OUTPUT.txt",
+    "reports/BANNERS_TEST_RESULTS.md",
+    "routes/bannerRoutes.js",
+    "services/bannerService.js",
+    "tests/banner-browser-extra.py",
+    "tests/banner-browser.py",
+    "tests/banner.test.js",
+    "public/css/banners.css",
+    "public/js/admin-banners.js",
+    "public/js/home-banners.js",
+    "tests/fixtures/banner-browser-server.js",
+    "tests/fixtures/banner-memory.js"
+  ]
+}

@@ -1,0 +1,4 @@
+const express=require('express');
+function wrap(fn){if(Array.isArray(fn))return fn.map(wrap);if(typeof fn!=='function'||fn.length===4)return fn;return function(q,s,n){try{const result=fn.call(this,q,s,n);if(result&&typeof result.catch==='function')result.catch(n)}catch(e){n(e)}}}
+function patch(target){for(const method of ['get','post','put','patch','delete','use']){const original=target[method];target[method]=function(...args){return original.apply(this,args.map(x=>typeof x==='function'||Array.isArray(x)?wrap(x):x))}}return target}
+patch(express.application);const original=express.Router;express.Router=function(...args){return patch(original(...args))};Object.assign(express.Router,original);

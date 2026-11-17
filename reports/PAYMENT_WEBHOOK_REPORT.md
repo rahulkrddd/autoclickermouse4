@@ -1,0 +1,2 @@
+# Payment and webhook report
+Static/local regression coverage passed. Razorpay notes and stored gateway payload include the server site snapshot. Live order creation, signature verification, replay, wrong-deployment webhook delivery and settlement were not run without isolated Razorpay credentials and a reachable callback.

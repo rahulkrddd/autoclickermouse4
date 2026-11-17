@@ -1,0 +1,15 @@
+{
+  "changed": [
+    "models/Banner.js",
+    "public/css/banners.css",
+    "public/js/admin-banners.js",
+    "public/js/home-banners.js",
+    "public/admin.html",
+    "public/index.html",
+    "services/bannerService.js"
+  ],
+  "added": [
+    "public/js/banner-boot.js"
+  ],
+  "syntaxFilesPassed": 113
+}

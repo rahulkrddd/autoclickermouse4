@@ -1,0 +1,53 @@
+{
+  "backend": "MOCKED FIXTURES ONLY",
+  "browser": "Chromium 1228",
+  "results": [
+    {
+      "test": "admin safety panel mounts with original admin frontend",
+      "passed": true
+    },
+    {
+      "test": "security status and missing business details are visible",
+      "passed": true
+    },
+    {
+      "test": "payment recovery row is visible",
+      "passed": true
+    },
+    {
+      "test": "payment retry uses CSRF header",
+      "passed": true
+    },
+    {
+      "test": "recovery backup download is wired",
+      "passed": true
+    },
+    {
+      "test": "reset sends receipt and exact site confirmation",
+      "passed": true
+    },
+    {
+      "test": "coupon scope fields save through original admin form",
+      "passed": true
+    },
+    {
+      "test": "safety panel fits mobile width",
+      "passed": true
+    },
+    {
+      "test": "customer product feedback selector has both purchased items",
+      "passed": true
+    },
+    {
+      "test": "customer feedback sends selected item and scoped token",
+      "passed": true
+    },
+    {
+      "test": "captured payment pending state hides payment form",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "passed": 11,
+  "failed": 0
+}

@@ -1,0 +1,16 @@
+{
+  "passed": [
+    "Actual admin tab opens Banners pane",
+    "PNG upload, exact-size crop/zoom and Save work through real feature API",
+    "Mobile crop output is 800x600; site product/category dropdown works",
+    "Move-up reorder persists",
+    "Banner click filters actual storefront by category",
+    "Banner click searches actual storefront products",
+    "320px mobile has no horizontal page overflow; mobile image ratio correct",
+    "Mobile admin banner tab remains clickable",
+    "Edit existing banner without re-upload succeeds",
+    "Activate/deactivate persists",
+    "Deleting all banners hides homepage slider including cached previous content"
+  ],
+  "page_errors": []
+}

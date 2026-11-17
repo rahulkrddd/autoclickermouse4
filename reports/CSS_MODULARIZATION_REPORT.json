@@ -1,0 +1,29 @@
+{
+  "source_file": "website45.txt",
+  "extracted_files": 83,
+  "original_css_bytes": 94864,
+  "original_css_sha256": "a97fb243bbc4bb87cba66b1ab1bb85855d476e34df8fe39b584e1c9a4050d6e3",
+  "rejoined_css_sha256": "a97fb243bbc4bb87cba66b1ab1bb85855d476e34df8fe39b584e1c9a4050d6e3",
+  "page_stylesheets": {
+    "index.html": "home.css",
+    "product.html": "product-page.css",
+    "cart.html": "cart-page.css",
+    "orders.html": "orders-page.css",
+    "review.html": "reviews-page.css",
+    "faq.html": "faq-page.css",
+    "policies.html": "policies-page.css",
+    "admin.html": "admin-page.css"
+  },
+  "ordered_fragments": [
+    "01-foundation.css",
+    "02-shared-components.css",
+    "03-storefront.css",
+    "04-product-checkout.css",
+    "05-orders-cart-reviews.css",
+    "06-admin-foundation.css",
+    "07-admin-products.css",
+    "08-responsive-enhancements.css"
+  ],
+  "functional_code_changes": 0,
+  "api_database_backend_changes": 0
+}

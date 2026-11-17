@@ -1,0 +1,292 @@
+{
+  "mode": "Offline Chromium with mocked API responses; not live database/payment verification",
+  "passed": 57,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Baseline reproduces FAQ badge stuck at zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Baseline reproduces missing Admin handler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Baseline reproduces missing Orders handler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ badge restores site cart quantity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ no browser script errors",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "FAQ missing nav-active script removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Admin opens existing login modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ login close works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Orders asks mobile when absent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Existing numeric input filter preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Orders submit navigates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Orders uses original POST endpoint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ saved mobile navigation preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Admin submit navigates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ Admin uses original POST endpoint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ link navigates /cart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ link navigates /review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ link navigates /",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ search preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ expand preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ collapse preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "FAQ empty search state preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /FAQs",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /FAQs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /FAQs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /cart",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /cart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /cart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /review",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /product/test-product",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Cart badge on /product/test-product",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Search button navigation /product/test-product",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /my-orders?mobileNumber=9999999999",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Return to store /my-orders?mobileNumber=9999999999",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /admin",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Return to store /admin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Page script smoke /policies",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "Return to store /policies",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "History restore refreshes badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Other tab cart update refreshes badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Other site cart cannot change current badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Mobile FAQ Admin modal works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ script smoke",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "site-b FAQ site-scoped cart badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ Admin modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ Orders modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b FAQ Cart navigation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ script smoke",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "test": "site-c FAQ site-scoped cart badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ Admin modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ Orders modal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c FAQ Cart navigation",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

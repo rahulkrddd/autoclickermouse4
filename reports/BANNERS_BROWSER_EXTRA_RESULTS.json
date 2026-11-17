@@ -1,0 +1,13 @@
+{
+  "passed": [
+    "Single banner: no dots, no unnecessary auto-scroll",
+    "Auto-slide advances after 4 seconds",
+    "Mouse drag slides without accidental banner activation",
+    "Product banner opens configured product route",
+    "Cached banners render even when fresh API fails",
+    "Fresh empty response replaces cached banners and hides slider",
+    "Mobile native left swipe advances carousel",
+    "No Action banner has no clickable link"
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "gateways": [
+      "cashfree"
+    ],
+    "selected": "cashfree",
+    "gateway_opened": true,
+    "button_restored": true,
+    "uncaught_errors": []
+  },
+  {
+    "gateways": [
+      "razorpay"
+    ],
+    "selected": "razorpay",
+    "gateway_opened": true,
+    "button_restored": true,
+    "uncaught_errors": []
+  },
+  {
+    "gateways": [
+      "cashfree",
+      "razorpay"
+    ],
+    "selected": "cashfree",
+    "gateway_opened": true,
+    "button_restored": true,
+    "uncaught_errors": []
+  },
+  {
+    "gateways": [
+      "cashfree",
+      "razorpay"
+    ],
+    "selected": "razorpay",
+    "gateway_opened": true,
+    "button_restored": true,
+    "uncaught_errors": []
+  }
+]

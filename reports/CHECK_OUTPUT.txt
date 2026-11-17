@@ -1,0 +1,2 @@
+> autoclickermouse-mongodb@4.0.0 check
+> node --check app.js && find config models services routes scripts tests public/js -name '*.js' -print0 | xargs -0 -n1 node --check

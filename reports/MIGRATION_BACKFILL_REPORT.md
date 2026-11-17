@@ -1,0 +1,3 @@
+# Migration and backfill report
+
+No destructive migration is executed automatically. Existing MongoDB data remains the baseline. Product-default and invoice scripts are explicit, idempotent operations with dry-run commands. Customer reconciliation now excludes the aggregation `_id` from `$set`, preventing mobile numbers from being cast into MongoDB ObjectIds. Database `collMod` validation now reports a controlled skip when the Atlas user lacks that privilege.

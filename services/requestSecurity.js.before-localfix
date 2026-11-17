@@ -1,0 +1,10 @@
+const crypto=require('crypto');
+function token(q){if(!q.session.csrfToken)q.session.csrfToken=crypto.randomBytes(32).toString('hex');return q.session.csrfToken}
+function middleware(q,s,n){
+ if(['GET','HEAD','OPTIONS'].includes(q.method)||q.path.startsWith('/webhooks/'))return n();
+ // Existing anonymous customer APIs retain their authentication contract. Protect all admin mutations.
+ if(!q.path.startsWith('/admin/'))return n();
+ const origin=q.get('origin');if(origin){let expected;try{expected=new URL(process.env.PUBLIC_BASE_URL||`${q.protocol}://${q.get('host')}`).origin;if(new URL(origin).origin!==expected)return s.status(403).json({message:'Cross-origin admin request rejected'})}catch{return s.status(403).json({message:'Invalid request origin'})}}
+ const actual=q.get('x-csrf-token')||'',expected=token(q);if(!/^[a-f0-9]{64}$/.test(actual)||!crypto.timingSafeEqual(Buffer.from(actual),Buffer.from(expected)))return s.status(403).json({code:'CSRF_INVALID',message:'Security token expired. Please retry.'});n();
+}
+module.exports={token,middleware};

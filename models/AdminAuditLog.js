@@ -1,0 +1,3 @@
+const siteScopedPlugin=require('../plugins/siteScopedPlugin');
+const mongoose=require('mongoose');const schema=new mongoose.Schema({actorId:String,action:String,module:String,entityId:String,before:mongoose.Schema.Types.Mixed,after:mongoose.Schema.Types.Mixed,createdAt:{type:Date,default:Date.now}},{collection:'admin_audit_logs',versionKey:false});schema.index({module:1,entityId:1,createdAt:-1});schema.index({actorId:1,createdAt:-1});schema.plugin(siteScopedPlugin);
+module.exports=mongoose.model('AdminAuditLog',schema);

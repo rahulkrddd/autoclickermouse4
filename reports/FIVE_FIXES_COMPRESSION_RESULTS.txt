@@ -1,0 +1,17 @@
+{"fixture":"1793117639411.jpg","input":453735,"output":105850,"mime":"image/webp"}
+✔ real uploaded image fits 200 KB: 1793117639411.jpg (242.729105ms)
+{"fixture":"image.png","input":811232,"output":97242,"mime":"image/webp"}
+✔ real uploaded image fits 200 KB: image.png (352.505695ms)
+✔ small valid PNG unchanged (7.061939ms)
+✔ corrupt image rejected (5.474205ms)
+✔ empty image rejected (0.433023ms)
+✔ transparent large PNG remains transparent (133.799543ms)
+✔ shared storage uploads only bounded bytes with correct extension and MIME (257.700675ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1598.296781

@@ -1,0 +1,2 @@
+# Supabase image migration report
+Unit tests reject foreign-site, traversal, legacy unnamespaced and external paths. Live copy, target verification, metadata update and source cleanup were not run without Supabase credentials. A public bucket gives public URL access; path namespaces enforce management isolation, not confidentiality.

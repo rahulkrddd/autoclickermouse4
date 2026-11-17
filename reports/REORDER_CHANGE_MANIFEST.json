@@ -1,0 +1,18 @@
+{
+  "supplied_files": 239,
+  "changed_from_original_repomix": [
+    "models/Payment.js",
+    "public/js/checkout.js",
+    "public/js/orders.js",
+    "public/cart.html",
+    "public/index.html",
+    "public/orders.html",
+    "public/product.html",
+    "services/checkoutReservationService.js",
+    "app.js"
+  ],
+  "node_tests_passed": 17,
+  "mocked_chromium_scenarios_passed": 4,
+  "syntax_check": "passed",
+  "live_payment_tested": false
+}

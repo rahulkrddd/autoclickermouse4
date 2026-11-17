@@ -1,0 +1,52 @@
+> autoclickermouse-mongodb@4.0.0 test
+> node --test tests/*.test.js
+
+✔ activation: no dates (1.731154ms)
+✔ activation: future start (0.242207ms)
+✔ activation: past expiry (0.113751ms)
+✔ activation: inverted dates (0.099356ms)
+✔ activation: invalid start (0.769292ms)
+✔ activation: invalid expiry (0.195842ms)
+✔ activation: valid window (0.091217ms)
+✔ activation: start boundary (0.292028ms)
+✔ activation: expiry boundary (0.379391ms)
+✔ limits: unlimited (1.0424ms)
+✔ limits: global limit (0.547646ms)
+✔ limits: counter fallback (0.2997ms)
+✔ limits: historical COD (2.530008ms)
+✔ limits: zero global (0.108578ms)
+✔ limits: per customer (0.315051ms)
+✔ limits: other customer (0.114786ms)
+✔ limits: missing mobile (0.083641ms)
+✔ limits: zero customer (0.223492ms)
+✔ limits: below limits (0.092937ms)
+✔ transaction session propagates to count queries (0.268151ms)
+✔ commit uses transaction and backfills historical usage (0.156128ms)
+✔ commit rejects without transaction (0.161109ms)
+✔ commit rejects deleted coupon (0.206034ms)
+✔ actual couponDiscount: valid (1.558165ms)
+✔ actual couponDiscount: inactive (1.025736ms)
+✔ actual couponDiscount: future (0.945988ms)
+✔ actual couponDiscount: expired (0.751403ms)
+✔ actual couponDiscount: minimum (0.852329ms)
+✔ actual couponDiscount: customer required (0.648196ms)
+✔ actual activation route: future (1.67776ms)
+✔ actual activation route: expired (1.201282ms)
+✔ actual activation route: valid (0.961163ms)
+✔ actual activation route: deactivate future (0.690793ms)
+✔ COD transaction wraps order, inventory and coupon usage (0.325747ms)
+✔ online finalizer is idempotent before coupon checks and always closes session (0.263513ms)
+✔ coupon save clears blank limits rather than dropping undefined fields (0.659021ms)
+✔ actual COD route creates order, decrements stock and counts coupon (3.028254ms)
+✔ actual COD route rejects exhausted global limit before creating order (1.068698ms)
+✔ actual COD route rejects per customer limit before creating order (42.589386ms)
+✔ actual COD replay does not increment coupon or stock twice (1.523628ms)
+✔ actual COD stock failure does not commit coupon count and closes session (1.255725ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 41
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 666.704453

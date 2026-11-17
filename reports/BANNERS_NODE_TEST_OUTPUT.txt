@@ -1,0 +1,35 @@
+▶ Banner feature: validation, routes, storage and concurrency
+  ✔ foreign site rejected by schema (5.977721ms)
+  ✔ read query automatically scopes current site (4.286034ms)
+  ✔ foreign query override rejected (1.145405ms)
+  ✔ empty public list (79.272498ms)
+  ✔ unauthenticated admin rejected (6.571103ms)
+  ✔ foreign-site admin rejected (10.209877ms)
+  ✔ CSRF enforced (20.400184ms)
+  ✔ viewer cannot write (10.870504ms)
+  ✔ siteId payload override rejected (64.939337ms)
+  ✔ invalid schedule rejected (13.251093ms)
+  ✔ foreign product target rejected (10.389491ms)
+  ✔ missing image rejected (57.410279ms)
+  ✔ create stores exact 1400x600 WebP in site namespace (152.560387ms)
+  ✔ public response does not expose storage path/bucket/siteId (4.880608ms)
+  ✔ mobile image is exactly 800x600 (241.571475ms)
+  ✔ update cleans old image only after commit (134.525001ms)
+  ✔ schedule and inactive banners hidden (478.604722ms)
+  ✔ six-banner limit including inactive/scheduled (183.524461ms)
+  ✔ reorder requires all IDs once (21.217657ms)
+  ✔ failed image cleanup is retained and retryable (14.498295ms)
+  ✔ concurrent sixth-banner requests cannot exceed six (393.431308ms)
+  ✔ failed concurrent uploads leave no orphan storage objects (0.646032ms)
+  ✔ SVG and invalid binary rejected (4.646202ms)
+  ✔ common raster formats normalize correctly (2409.418076ms)
+  ✔ date boundaries enforced (0.369979ms)
+✔ Banner feature: validation, routes, storage and concurrency (4539.956577ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6054.81919

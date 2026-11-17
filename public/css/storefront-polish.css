@@ -1,0 +1,68 @@
+/* Requested storefront polish: complete titles, compact one-line footer and cart metadata. */
+body .footer {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 12px 8px !important;
+  margin-inline: 0 !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  font-size: clamp(8px, 2.35vw, 14px) !important;
+  line-height: 1.4 !important;
+  overflow: visible !important;
+}
+body .footer a { display: inline !important; white-space: nowrap !important; font-size: inherit !important; }
+body:not(:has(#stats)) .cartrow .cart-variation-detail,
+body:not(:has(#stats)) .cartrow .cart-item-sku {
+  margin: 5px 0 9px;
+  font-size: .85rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #596273;
+  overflow-wrap: anywhere;
+}
+
+/* Five requested fixes, scoped to storefront cards, search and cart only. */
+body:not(:has(#stats)) .product-card .card-content {
+ display:grid!important;grid-template-rows:auto auto auto auto auto!important;row-gap:4px!important;padding-bottom:4px!important;
+}
+body:not(:has(#stats)) .product-card .card-content > h3.product-name-clamp,
+body:not(:has(#stats)) .product-card .card-content > p.card-description {
+ display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;line-clamp:2!important;
+ height:auto!important;min-height:0!important;max-height:none!important;overflow:hidden!important;text-overflow:ellipsis!important;
+ white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important;line-height:1.4!important;margin:0!important;padding:0!important;
+}
+body:not(:has(#stats)) .product-card .card-content > .card-price-row,
+body:not(:has(#stats)) .product-card .card-content > .stock-status {margin:0!important;align-self:start!important;min-height:0!important;}
+body:not(:has(#stats)) .product-card .product-actions {padding-top:5px!important;margin-top:0!important;}
+body:has(#rows) .cartrow {gap:8px 10px!important;padding:12px!important;min-height:0!important;align-items:center!important;}
+body:has(#rows) .cartrow > div {min-width:0!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:5px!important;}
+body:has(#rows) .cartrow h3 {margin:0!important;line-height:1.4!important;}
+body:has(#rows) .cartrow p,
+body:has(#rows) .cartrow .cart-variation-detail,
+body:has(#rows) .cartrow .cart-item-sku {margin:0!important;line-height:1.4!important;}
+body:has(#rows) #rows {display:grid;gap:10px;}
+body:has(#rows) .cartrow {margin-block:0!important;}
+.search {position:relative;overflow:visible!important;}
+.shop-keyword-suggestions {position:absolute;top:calc(100% + 5px);left:0;right:0;z-index:1000;max-height:320px;overflow-y:auto;border:1px solid #e2dde1;border-radius:10px;background:#fff;color:#212121;box-shadow:0 8px 24px #0002;padding:5px;}
+.shop-keyword-suggestions[hidden] {display:none!important;}
+.shop-keyword-option {display:flex;align-items:center;gap:12px;padding:11px 12px;min-height:44px;box-sizing:border-box;border-radius:6px;cursor:pointer;font-size:14px;line-height:1.4;overflow-wrap:anywhere;}
+.shop-keyword-option > span:first-child {font-size:22px;color:#69636a;}
+.shop-keyword-option:hover,.shop-keyword-option[aria-selected="true"] {background:#f8edf2;}
+
+/* Search upgrade: recent history on blank focus and product suggestions while typing. */
+.shop-keyword-suggestions {padding:6px;}
+.shop-keyword-option {min-height:52px;}
+.shop-keyword-option.shop-product-option {gap:11px;padding:8px 10px;}
+.shop-suggestion-image {width:42px;height:42px;flex:0 0 42px;object-fit:contain;border-radius:7px;background:#f7f4f6;}
+.shop-suggestion-copy {display:flex;min-width:0;flex:1;flex-direction:column;gap:2px;}
+.shop-suggestion-copy strong {overflow:hidden;color:inherit;font-size:14px;font-weight:700;text-overflow:ellipsis;white-space:nowrap;}
+.shop-suggestion-copy small {overflow:hidden;color:#6f6870;font-size:12px;text-overflow:ellipsis;white-space:nowrap;}
+.shop-history-icon {width:24px;flex:0 0 24px;color:#69636a;font-size:22px;text-align:center;}
+.shop-history-label {min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.shop-history-remove {width:34px;height:34px;flex:0 0 34px;border:0;border-radius:50%;background:transparent;color:#332d33;cursor:pointer;font-size:25px;line-height:1;}
+.shop-history-remove:hover,.shop-history-remove:focus-visible {background:#f1e6eb;outline:none;}
+@media (max-width:640px){.shop-keyword-suggestions {position:fixed;top:var(--search-suggestions-top,72px);left:8px;right:8px;max-height:min(62vh,520px);border-radius:12px;}.shop-keyword-option {font-size:15px;}.shop-suggestion-image {width:46px;height:46px;flex-basis:46px;}}

@@ -1,0 +1,331 @@
+{
+  "passed": 65,
+  "failed": 0,
+  "results": [
+    {
+      "test": "site-a 320px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.84375, 'line': 19.936, 'clamp': '2', 'overflow': 'hidden', 'bottom': 749.3125, 'next': 753.3125}"
+    },
+    {
+      "test": "site-a 320px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 786.90625, 'next': 790.90625}"
+    },
+    {
+      "test": "site-a 320px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 360px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.84375, 'line': 19.936, 'clamp': '2', 'overflow': 'hidden', 'bottom': 728.3125, 'next': 732.3125}"
+    },
+    {
+      "test": "site-a 360px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 765.90625, 'next': 769.90625}"
+    },
+    {
+      "test": "site-a 360px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 390px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.84375, 'line': 19.936, 'clamp': '2', 'overflow': 'hidden', 'bottom': 730.3125, 'next': 734.3125}"
+    },
+    {
+      "test": "site-a 390px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 767.90625, 'next': 771.90625}"
+    },
+    {
+      "test": "site-a 390px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 720px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 52.40625, 'line': 26.208, 'clamp': '2', 'overflow': 'hidden', 'bottom': 774.0625, 'next': 778.0625}"
+    },
+    {
+      "test": "site-a 720px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 44.78125, 'line': 22.4, 'clamp': '2', 'overflow': 'hidden', 'bottom': 822.84375, 'next': 826.84375}"
+    },
+    {
+      "test": "site-a 720px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1024px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 52.40625, 'line': 26.208, 'clamp': '2', 'overflow': 'hidden', 'bottom': 831.71875, 'next': 835.71875}"
+    },
+    {
+      "test": "site-a 1024px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 44.78125, 'line': 22.4, 'clamp': '2', 'overflow': 'hidden', 'bottom': 880.5, 'next': 884.5}"
+    },
+    {
+      "test": "site-a 1024px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-a 1440px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 52.40625, 'line': 26.208, 'clamp': '2', 'overflow': 'hidden', 'bottom': 879.15625, 'next': 883.15625}"
+    },
+    {
+      "test": "site-a 1440px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 44.78125, 'line': 22.4, 'clamp': '2', 'overflow': 'hidden', 'bottom': 927.9375, 'next': 931.9375}"
+    },
+    {
+      "test": "site-a 1440px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 320px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 36.375, 'line': 18.2, 'clamp': '2', 'overflow': 'hidden', 'bottom': 687.65625, 'next': 691.65625}"
+    },
+    {
+      "test": "site-b 320px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 725.25, 'next': 729.25}"
+    },
+    {
+      "test": "site-b 320px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 360px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 36.375, 'line': 18.2, 'clamp': '2', 'overflow': 'hidden', 'bottom': 694.5625, 'next': 698.5625}"
+    },
+    {
+      "test": "site-b 360px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 732.15625, 'next': 736.15625}"
+    },
+    {
+      "test": "site-b 360px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 390px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 36.375, 'line': 18.2, 'clamp': '2', 'overflow': 'hidden', 'bottom': 681.25, 'next': 685.25}"
+    },
+    {
+      "test": "site-b 390px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 718.84375, 'next': 722.84375}"
+    },
+    {
+      "test": "site-b 390px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 720px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 42, 'line': 21, 'clamp': '2', 'overflow': 'hidden', 'bottom': 786.40625, 'next': 790.40625}"
+    },
+    {
+      "test": "site-b 720px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 36.375, 'line': 18.2, 'clamp': '2', 'overflow': 'hidden', 'bottom': 826.78125, 'next': 830.78125}"
+    },
+    {
+      "test": "site-b 720px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1024px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 42, 'line': 21, 'clamp': '2', 'overflow': 'hidden', 'bottom': 752.9375, 'next': 756.9375}"
+    },
+    {
+      "test": "site-b 1024px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 36.375, 'line': 18.2, 'clamp': '2', 'overflow': 'hidden', 'bottom': 793.3125, 'next': 797.3125}"
+    },
+    {
+      "test": "site-b 1024px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-b 1440px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 42, 'line': 21, 'clamp': '2', 'overflow': 'hidden', 'bottom': 782, 'next': 786}"
+    },
+    {
+      "test": "site-b 1440px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 36.375, 'line': 18.2, 'clamp': '2', 'overflow': 'hidden', 'bottom': 822.375, 'next': 826.375}"
+    },
+    {
+      "test": "site-b 1440px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 320px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.84375, 'line': 19.936, 'clamp': '2', 'overflow': 'hidden', 'bottom': 2489.640625, 'next': 2493.640625}"
+    },
+    {
+      "test": "site-c 320px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 2527.234375, 'next': 2531.234375}"
+    },
+    {
+      "test": "site-c 320px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 360px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.84375, 'line': 19.936, 'clamp': '2', 'overflow': 'hidden', 'bottom': 2483.5, 'next': 2487.5}"
+    },
+    {
+      "test": "site-c 360px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 2521.09375, 'next': 2525.09375}"
+    },
+    {
+      "test": "site-c 360px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 390px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.84375, 'line': 19.936, 'clamp': '2', 'overflow': 'hidden', 'bottom': 2492.28125, 'next': 2496.28125}"
+    },
+    {
+      "test": "site-c 390px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 33.59375, 'line': 16.8, 'clamp': '2', 'overflow': 'hidden', 'bottom': 2529.875, 'next': 2533.875}"
+    },
+    {
+      "test": "site-c 390px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 720px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 45.84375, 'line': 22.932, 'clamp': '2', 'overflow': 'hidden', 'bottom': 1775.9375, 'next': 1779.9375}"
+    },
+    {
+      "test": "site-c 720px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.1875, 'line': 19.6, 'clamp': '2', 'overflow': 'hidden', 'bottom': 1819.125, 'next': 1823.125}"
+    },
+    {
+      "test": "site-c 720px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1024px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 45.84375, 'line': 22.932, 'clamp': '2', 'overflow': 'hidden', 'bottom': 1451.859375, 'next': 1455.859375}"
+    },
+    {
+      "test": "site-c 1024px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.1875, 'line': 19.6, 'clamp': '2', 'overflow': 'hidden', 'bottom': 1495.046875, 'next': 1499.046875}"
+    },
+    {
+      "test": "site-c 1024px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "site-c 1440px .product-name-clamp two complete lines",
+      "passed": true,
+      "detail": "{'h': 45.84375, 'line': 22.932, 'clamp': '2', 'overflow': 'hidden', 'bottom': 1404.234375, 'next': 1408.234375}"
+    },
+    {
+      "test": "site-c 1440px .card-description two complete lines",
+      "passed": true,
+      "detail": "{'h': 39.1875, 'line': 19.6, 'clamp': '2', 'overflow': 'hidden', 'bottom': 1447.421875, 'next': 1451.421875}"
+    },
+    {
+      "test": "site-c 1440px no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Native datalist removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Short keyword suggestions visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Keyboard selects keyword and filters products",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": ".cart-action immediate detail selection message",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": ".cart-action no accidental cart add",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": ".buy-action immediate detail selection message",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": ".buy-action no accidental cart add",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Separate base and variation cart rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Compact cart text spacing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Variation quantity preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "No browser script errors",
+      "passed": true,
+      "detail": "[]"
+    }
+  ]
+}

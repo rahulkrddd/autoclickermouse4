@@ -1,0 +1,55 @@
+module.exports = {
+  STORE_NAME: "",
+  COMPANY_NAME: "",
+  EMAIL: "",
+  MOBILE: "",
+  ADDRESS: "",
+
+  PRIVACY_POLICY: `
+Any information shared by customers may be used only for order processing, customer support, shipping updates, and service improvement.
+
+Customer information is not intentionally shared with unauthorized third parties.
+
+By using this website, you agree to the collection and use of information as described here.
+`,
+
+  SHIPPING_POLICY: `
+Orders are generally processed and shipped within 3 to 5 working days.
+
+Actual delivery timelines may vary depending on courier services, location, weather conditions, public holidays, stock availability, or other unforeseen circumstances.
+
+Delivery delays beyond our control may occasionally occur.
+`,
+
+  RETURN_POLICY: `
+Currently, we do not offer a standard return policy.
+
+However, return requests may be reviewed on a case-by-case basis depending on the nature of the issue.
+
+Customers are encouraged to contact support for assistance regarding any order concerns.
+`,
+
+  REFUND_POLICY: `
+Refund requests, if approved, are processed on a case-by-case basis.
+
+Processing time may vary depending on the payment provider or banking partner.
+
+Approval of refunds is subject to review and verification.
+`,
+
+  TERMS_AND_CONDITIONS: `
+By using this website, you agree to comply with all applicable terms and conditions.
+
+Product availability, pricing, and content may change without prior notice.
+
+We reserve the right to refuse, cancel, or limit orders when necessary.
+`,
+
+  DISCLAIMER: `
+Information provided on this website is for general informational purposes only.
+
+Product descriptions, images, specifications, and pricing may occasionally contain inaccuracies and may change without notice.
+
+Users are advised to verify relevant details before making a purchase.
+`
+};
